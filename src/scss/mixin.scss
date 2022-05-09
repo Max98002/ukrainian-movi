@@ -1,0 +1,11 @@
+@mixin d-f-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin d-f-start {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}

@@ -1,3 +1,26 @@
 @import 'fonts';
 @import 'grid';
 @import 'reboot';
+@import 'mixin';
+
+body {
+  font-family: 'SFProDisplay';
+  font-weight: normal;
+  background-color: #02060C;
+  color: #ffffff;
+  font-size: 1.6rem;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+@import './buttons/buttons';
+
+@import './header/header';
+@import './header/header-media';
+
+@import './nav/nav';
+
+@import './search-block/search-block';
