@@ -1,0 +1,82 @@
+.header {
+  &-btns {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    margin-left: auto;
+    margin-right: 40px;
+  }
+
+  &__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    background: transparent;
+    border: none;
+    color: #ffffff;
+
+    &_text {
+      margin-left: 10px;
+      line-height: 19px;
+    }
+
+    &_enter {
+      &:hover {
+        .header__button_text {
+          color: #717D8C;
+        }
+
+        svg {
+          path {
+            fill: #717D8C;
+          }
+        }
+      }
+    }
+
+    &_user {
+      &:hover {
+        .header__button_text {
+          color: #717D8C;
+        }
+
+        svg {
+          path {
+            stroke: #717D8C;
+          }
+        }
+      }
+    }
+  }
+
+  &__icon {
+    display: grid;
+    place-items: center;
+    width: 20px;
+    height: 20px;
+
+    svg {
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 575.98px) {
+  .header {
+    &-btns {
+      margin: 0;
+    }
+    &__button {
+      &_text {
+        display: none;
+      }
+    }
+  }
+}
+
+@media (max-width: 767.98px) {}
+
+@media (max-width: 991.98px) {}
+
+@media (max-width: 1199.98px) {}

@@ -5,8 +5,16 @@ const searchBlockStyle = () => {
   const dandruff = searchBlock.querySelector('.search-dandruff-icon');
   const close = searchBlock.querySelector('.search-close-icon');
 
+  const btn = document.querySelector('.burger');
+  const nav = document.querySelector('.nav');
+
   const setStyle = (toggleClass, attr = '', e) => {
     const target = e.target;
+
+    if (btn.classList.contains('burger_active')) {
+      btn.classList.remove('burger_active');
+      nav.classList.remove('nav_active');
+    }
 
     dandruff.classList[toggleClass]('search-dandruff-icon_focus');
     close.classList[toggleClass]('search-close-icon_focus');

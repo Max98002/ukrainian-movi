@@ -16,11 +16,15 @@ a {
   text-decoration: none;
 }
 
+@import './burger-btn/burger-btn';
+
 @import './buttons/buttons';
 
 @import './header/header';
 @import './header/header-media';
+@import './header-btn/header-btn';
 
 @import './nav/nav';
 
 @import './search-block/search-block';
+@import './search-block/search-block-media';

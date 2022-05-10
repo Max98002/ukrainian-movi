@@ -6,9 +6,15 @@ import Swiper, { Navigation, Pagination } from 'swiper';
 const swiper = new Swiper();
 */
 import searchBlockStyle from './modules/search-block.js';
+import toggleBurger from "./modules/toggle-burger.js";
+import menuToggle from './modules/menu-toggle.js';
 
 window.addEventListener('DOMContentLoaded', () => {
   "use strict";
   
   searchBlockStyle();
+
+  toggleBurger();
+
+  menuToggle();
 });
