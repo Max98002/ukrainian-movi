@@ -55,10 +55,6 @@
     place-items: center;
     width: 20px;
     height: 20px;
-
-    svg {
-      width: 100%;
-    }
   }
 }
 
@@ -67,9 +63,19 @@
     &-btns {
       margin: 0;
     }
+
     &__button {
       &_text {
         display: none;
+      }
+    }
+
+    &__icon {
+      width: 22px;
+      height: 22px;
+      svg {
+        width: 22px;
+        height: 22px;
       }
     }
   }

@@ -14,7 +14,7 @@
 @media (max-width: 575.98px) {
   .nav {
     position: absolute;
-    top: 51px;
+    top: 63px;
     left: -110%;
     width: 100%;
     padding-top: 40px;
@@ -47,3 +47,17 @@
     }
   }
 }
+
+@media (max-width: 767.98px) {
+  .nav {
+    &__link {
+      &:not(:last-child) {
+        margin-right: 22px;
+      }
+    }
+  }
+}
+
+@media (max-width: 991.98px) {}
+
+@media (max-width: 1199.98px) {}

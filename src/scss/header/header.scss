@@ -8,3 +8,9 @@
   background: rgba(16, 21, 27, 0.7);
   backdrop-filter: blur(134px);
 }
+
+@media (max-width: 575.98px) {
+  .header {
+    height: 63px;
+  }
+}

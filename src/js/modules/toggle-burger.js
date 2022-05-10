@@ -3,12 +3,9 @@ const toggleBurger = () => {
   const nav = document.querySelector('.nav');
 
   btn.addEventListener('click', (e) => {
-    const target = e.target;
 
-    if (target && target === btn) {
-      btn.classList.toggle('burger_active');
-      nav.classList.toggle('nav_active');
-    }
+    btn.classList.toggle('burger_active');
+    nav.classList.toggle('nav_active');
 
   })
 

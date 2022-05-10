@@ -8,7 +8,8 @@ const searchBlockStyle = () => {
   const btn = document.querySelector('.burger');
   const nav = document.querySelector('.nav');
 
-  const setStyle = (toggleClass, attr = '', e) => {
+
+  input.addEventListener('focus', (e) => {
     const target = e.target;
 
     if (btn.classList.contains('burger_active')) {
@@ -16,16 +17,22 @@ const searchBlockStyle = () => {
       nav.classList.remove('nav_active');
     }
 
-    dandruff.classList[toggleClass]('search-dandruff-icon_focus');
-    close.classList[toggleClass]('search-close-icon_focus');
-    searchBlock.classList[toggleClass]('search_focus')
+    dandruff.classList.add('search-dandruff-icon_focus');
+    close.classList.add('search-close-icon_focus');
+    searchBlock.classList.add('search_focus');
 
-    target.setAttribute('placeholder', attr);
+    target.setAttribute('placeholder', '');
     target.value = '';
-  };
+  });
 
-  input.addEventListener('focus', (e) => setStyle('add', '', e));
-  input.addEventListener('blur', (e) => setStyle('remove', 'Шукай за назвою, актором або персонажем...', e));
+  close.addEventListener('click', () => {
+    dandruff.classList.remove('search-dandruff-icon_focus');
+    close.classList.remove('search-close-icon_focus');
+    searchBlock.classList.remove('search_focus');
+
+    input.value = '';
+    input.setAttribute('placeholder', 'Шукай за назвою, актором або персонажем...')
+  });
 };
 
 export default searchBlockStyle;
