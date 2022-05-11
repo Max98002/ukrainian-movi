@@ -1,0 +1,32 @@
+@media (max-width: 575.98px) {
+  .filter {
+    top: 115%;
+    background: #02060C;
+    max-height: 50vh;
+    &_no-results {
+      padding: 0 24px;
+      margin-top: 32px;
+      &_mobile {
+        display: block;
+        font-size: 1.6rem;
+        line-height: 20px;
+        color: #717D8C;
+        padding: 0 24px;
+      }
+    }
+    &-block {
+      margin-top: 16px;
+      &__link {
+        padding-left: 24px;
+      }
+      &-history {
+        &__link {
+          padding-left: 54px;
+          &::before {
+            left: 25px;
+          }
+        }
+      }
+    }
+  }
+}

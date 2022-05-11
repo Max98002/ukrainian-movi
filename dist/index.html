@@ -9,6 +9,7 @@
 </head>
 
 <body>
+	
 	<header class="header">
 
   <button class="burger">
@@ -39,6 +40,38 @@
         fill="#545D6C" />
     </svg>
   </button>
+
+  <div class="filter filter_hidden">
+
+  <span class="filter_no-results_mobile">Шукай за назвою, актором або персонажем</span>
+  <!-- Мобільний плейсхолдер -->
+
+  <!-- //Шаблон фільтра пошуку -->
+  <ul hidden class="filter-block">
+    <li class="filter-block__item"><a href="#" class="filter-block__link">Я, "Побєда" і Берлін</a></li>
+    <li class="filter-block__item"><a href="#" class="filter-block__link">Я перемога</a></li>
+    <li class="filter-block__item"><a href="#" class="filter-block__link">Ярослав Бліндар</a></li>
+    <li class="filter-block__item"><a href="#" class="filter-block__link">Хто ти і хто я?</a></li>
+    <li class="filter-block__item"><a href="#" class="filter-block__link">Семен ти Яків</a></li>
+    <li class="filter-block__item"><a href="#" class="filter-block__link">Ясність розуму</a></li>
+    <li class="filter-block__item"><a href="#" class="filter-block__link">Я перемога</a></li>
+  </ul>
+
+  <!-- //Шаблон історії пошуку -->
+  <ul hidden class="filter-block filter-block-history">
+    <li class="filter-block__item filter-block-history__item"><a href="#" class="filter-block__link filter-block-history__link">Я, "Побєда" і Берлін</a></li>
+    <li class="filter-block__item filter-block-history__item"><a href="#" class="filter-block__link filter-block-history__link">Я перемога</a></li>
+    <li class="filter-block__item filter-block-history__item"><a href="#" class="filter-block__link filter-block-history__link">Ярослав Бліндар</a></li>
+    <li class="filter-block__item filter-block-history__item"><a href="#" class="filter-block__link filter-block-history__link">Хто ти і хто я?</a></li>
+    <li class="filter-block__item filter-block-history__item"><a href="#" class="filter-block__link filter-block-history__link">Семен ти Яків</a></li>
+    <li class="filter-block__item filter-block-history__item"><a href="#" class="filter-block__link filter-block-history__link">Ясність розуму</a></li>
+    <li class="filter-block__item filter-block-history__item"><a href="#" class="filter-block__link filter-block-history__link">Я перемога</a></li>
+  </ul>
+
+  <!-- Заглушка нічого не знайдено -->
+  <span class="filter_no-results">Немає результатів</span>
+
+</div>
 </div>
 
   <div class="header-btns">
@@ -72,9 +105,73 @@
 </div>
 
 </header>
+
+	<section class="hero">
+
+</section>
+
 	<main>
+		<section class="materialInSite">
+  <div class="materialInSite__block">
+    <span class="materialInSite__name">Фільми</span>
+    <span class="materialInSite__count">143</span>
+  </div>
+  <div class="materialInSite__block">
+    <span class="materialInSite__name">Серіали</span>
+    <span class="materialInSite__count">23</span>
+  </div>
+  <div class="materialInSite__block">
+    <span class="materialInSite__name">Мультфільми</span>
+    <span class="materialInSite__count">55</span>
+  </div>
+</section>
+
+		<section class="novelty">
+  <div class="novelty-block">
+
+    <div class="novelty-block__img">
+      <img src="./img/novelty/novelty.jpg" alt="novelty">
+    </div>
+
+    <div class="novelty-movie-wrapper">
+
+      <div class="novelty-trailer">
+
+        <div class="novelty-trailer__video">
+          <video>
+            <source src="movie.mp4" type="video/mp4">
+            <source src="movie.ogg" type="video/ogg">
+          </video>
+        </div>
+        <!-- Тут має бути відео а не картинка -->
+        <span class="novelty-trailer__tag">Новинка</span>
+        <div class="novelty-trailer__watch">
+          <button class="novelty-trailer__btn">
+            <img src="./img/icons/icons.svg#play" class="svg-play-dims" alt="play" />
+            <span>Дивитись трейлер</span>
+          </button>
+          <span class="novelty-trailer__announcement">Прем’єра 13 Березня</span>
+        </div>
+
+      </div>
+
+      <div class="novelty-trailer__nameMovie">
+        <ul class="novelty-trailer-info">
+          <li class="novelty-trailer-info__item">Фільм</li>
+          <li class="novelty-trailer-info__item">2022</li>
+          <li class="novelty-trailer-info__item">18+</li>
+        </ul>
+        <h3 class="novelty-trailer__title">Я, "Побєда" і Берлін</h3>
+      </div>
+
+    </div>
+
+  </div>
+</section>
 	</main>
+
 	<footer></footer>
+	
 	<script src="js/app.min.js"></script>
 </body>
 
