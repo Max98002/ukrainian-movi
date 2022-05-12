@@ -1,0 +1,29 @@
+@media (max-width: 991.98px) {}
+
+@media (max-width: 767.98px) {
+  .list-movie {
+    &-wrapper {
+      grid-template-columns: repeat(auto-fill, 248px);
+    }
+  }
+}
+
+@media (max-width: 575.98px) {
+  .list-movie {
+    &-wrapper {
+      grid-template-columns: repeat(auto-fill, 156px);
+      grid-auto-rows: 292px;
+      column-gap: 10px;
+    }
+  }
+}
+
+@media (max-width: 375px) {
+  .list-movie {
+    &-wrapper {
+      grid-template-columns: repeat(auto-fill, 148px);
+      grid-auto-rows: 292px;
+      column-gap: 10px;
+    }
+  }
+}

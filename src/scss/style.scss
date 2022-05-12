@@ -14,7 +14,32 @@ body {
 a {
   color: inherit;
   text-decoration: none;
+  &:hover {
+    color: inherit;
+    text-decoration: none;
+  }
 }
+
+button {
+  background-color: transparent;
+  border: none;
+}
+
+.section {
+  &__mb {
+    margin-bottom: 128px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .section {
+    &__mb {
+      margin-bottom: 64px;
+    }
+  }
+}
+
+@import './section-name/section-name';
 
 @import './burger-btn/burger-btn';
 
@@ -38,3 +63,11 @@ a {
 
 @import './novelty/novelty';
 @import './novelty/novelty-media';
+
+@import './list-movie/list-movie';
+@import './list-movie/list-movie-media';
+
+@import './movie-card/movie-card';
+@import './movie-card/movie-card-media';
+
+@import './more-movie-btn/more-movie-btn'

@@ -1,0 +1,47 @@
+.section {
+  &__name {
+    margin-bottom: 40px;
+  }
+
+  &-name {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    &-title {
+      font-weight: 500;
+      font-size: 3.8rem;
+      line-height: 45px;
+      color: #FFFFFF;
+    }
+
+    &__title {
+      margin: 0;
+      margin-right: 9px;
+    }
+
+    &-count {
+      padding: 4px 8px;
+      font-weight: 500;
+      font-size: 1.4rem;
+      line-height: 17px;
+      color: #368CFC;
+      background: #07152B;
+      border-radius: 4px;
+    }
+  }
+}
+
+@media (max-width: 575.98px) {
+  .section {
+    &__name {
+      margin-bottom: 24px;
+    }
+    &-name {
+      &-title {
+        font-size: 2.1rem;
+        line-height: 25px;
+      }
+    }
+  }
+}

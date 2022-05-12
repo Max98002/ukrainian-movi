@@ -1,0 +1,66 @@
+.movie-card {
+  display: grid;
+  grid-template-rows: 423px 25px;
+  row-gap: 16px;
+
+  &__img {
+    overflow: hidden;
+    border-radius: 12px;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__block-text {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 4px;
+    font-weight: 700;
+    font-size: 2.1rem;
+    line-height: 25px;
+    color: #FFFFFF;
+  }
+
+  &-info {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    &__item {
+      position: relative;
+
+      &:not(:last-child) {
+        margin-right: 20px;
+
+        &::after {
+          content: '';
+          position: absolute;
+          top: 50%;
+          right: -12px;
+          width: 4px;
+          height: 4px;
+          background-color: #414F5E;
+          border-radius: 100%;
+          transform: translateY(-50%);
+        }
+      }
+
+      font-weight: 400;
+      font-size: 1.6rem;
+      line-height: 20px;
+      color: #A4AEBA;
+    }
+  }
+}
