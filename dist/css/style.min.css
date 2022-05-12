@@ -1131,6 +1131,7 @@ button {
   }
 }
 .movie-card {
+  position: relative;
   display: grid;
   grid-template-rows: 423px 25px;
   row-gap: 16px;
@@ -1187,6 +1188,75 @@ button {
   border-radius: 100%;
   transform: translateY(-50%);
 }
+.movie-card-estimates {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  display: flex;
+  flex-flow: row nowrap;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.movie-card-estimates__count {
+  font-size: 2.1rem;
+  line-height: 25px;
+}
+.movie-card-estimates__item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(2, 6, 12, 0.3);
+  backdrop-filter: blur(94px);
+  border-radius: 8px;
+  padding: 10px 14px;
+}
+.movie-card-estimates__item:hover:hover .movie-card-estimates__hover-text {
+  display: block;
+}
+.movie-card-estimates__item:not(:last-child) {
+  margin-right: 8px;
+}
+.movie-card-estimates__icon {
+  margin-right: 10px;
+}
+.movie-card-estimates__icon_orange path {
+  fill: #FCB735;
+}
+.movie-card-estimates_my {
+  background-color: #368CFC;
+}
+.movie-card-estimates__hover-text {
+  position: absolute;
+  top: -63px;
+  left: 50%;
+  display: none;
+  padding: 16px 24px;
+  font-size: 1.6rem;
+  line-height: 19px;
+  color: #02060C;
+  background-color: #fff;
+  backdrop-filter: blur(174px);
+  border-radius: 12px;
+  transform: translateX(-50%);
+}
+.movie-card-estimates__hover-text::before {
+  content: "";
+  position: absolute;
+  bottom: -12px;
+  left: 50%;
+  width: 32px;
+  height: 16px;
+  background: url("../img/icons/icons.svg#triangel") no-repeat center/cover;
+  transform: translateX(-50%);
+}
+.movie-card-estimates__hover-text_general {
+  width: 187px;
+}
+.movie-card-estimates__hover-text_my {
+  width: 133px;
+}
 
 @media (max-width: 575.98px) {
   .movie-card {
@@ -1195,6 +1265,24 @@ button {
   .movie-card__title {
     font-size: 1.6rem;
     line-height: 19px;
+  }
+  .movie-card-estimates {
+    top: 8px;
+    left: 8px;
+  }
+  .movie-card-estimates__item {
+    padding: 8px 12px;
+  }
+  .movie-card-estimates__count {
+    font-size: 1.6rem;
+    line-height: 19px;
+  }
+  .movie-card-estimates__icon {
+    width: 13px;
+    height: 13px;
+  }
+  .movie-card-estimates_my {
+    display: none;
   }
 }
 @media (max-width: 375px) {

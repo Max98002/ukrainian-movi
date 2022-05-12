@@ -1,7 +1,6 @@
 @media (max-width: 991.98px) {}
 
-@media (max-width: 767.98px) {
-}
+@media (max-width: 767.98px) {}
 
 @media (max-width: 575.98px) {
   .movie-card {
@@ -10,6 +9,30 @@
     &__title {
       font-size: 1.6rem;
       line-height: 19px;
+    }
+
+    &-estimates {
+      top: 8px;
+      left: 8px;
+
+      &__item {
+        padding: 8px 12px;
+      }
+
+      &__count {
+        font-size: 1.6rem;
+        line-height: 19px;
+      }
+
+      &__icon {
+        width: 13px;
+        height: 13px;
+      }
+
+      &_my {
+        display: none;
+      }
+
     }
   }
 }
