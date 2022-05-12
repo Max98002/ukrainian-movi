@@ -1,0 +1,14 @@
+.footer {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background: #0C1016;
+
+  span {
+    font-size: 1.6rem;
+    line-height: 19px;
+    color: #656E78;
+  }
+}
