@@ -27,7 +27,7 @@ button {
 
 .section {
   &__mb {
-    margin-bottom: 128px;
+    margin-bottom: 72px;
   }
 }
 
@@ -38,6 +38,8 @@ button {
     }
   }
 }
+
+@import './buttons/buttons.scss';
 
 @import './section-name/section-name';
 
@@ -58,8 +60,9 @@ button {
 @import './search-filter/search-filter-media';
 
 @import './hero/hero';
+@import './hero/hero-media';
 
-@import './material-in-site/material-in-site';
+@import './what-look/what-look';
 
 @import './novelty/novelty';
 @import './novelty/novelty-media';
@@ -74,6 +77,16 @@ button {
 
 @import './write-to-us/write-to-us';
 
+@import './back-element/back-element';
+
+@import './info-movie/info-movie';
+@import './info-movie/info-movie-media';
+
+@import './rating/rating';
+@import './rating/rating-media.scss';
+
+@import './score-credited/score-credited';
 
 
 @import './footer/footer';
+@import './footer/footer-media';

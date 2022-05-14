@@ -1,6 +1,66 @@
 .hero {
-  margin-top: 140px;
-  margin-bottom: 205px;
-  padding-top: 160px;
-  border: 1px solid red;
+  position: relative;
+  margin-bottom: 49px;
+  padding-top: 495px;
+  padding-bottom: 87px;
+  background: linear-gradient(0deg, #02060C 7.45%, rgba(2, 6, 12, 0) 26.05%);
+  // , url('../img/hero/hero.png') no-repeat center top / cover;
+  overflow: hidden;
+
+  &-video {
+    &-wrapper {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      z-index: -10;
+    }
+
+    &__videos {
+      object-fit: cover;
+      height: 100%;
+      width: 100%;
+
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
+
+  &-wrapper {
+    display: flex;
+    align-items: center;
+  }
+
+  &-title {
+    font-weight: 500;
+    font-size: 6.7rem;
+    line-height: 80px;
+    color: #FFFFFF;
+  }
+
+  &__title {
+    max-width: 548px;
+  }
+
+  &-info {
+    flex-grow: 1;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-start;
+    padding-left: 100px;
+
+    &__text {
+      margin-bottom: 32px;
+      font-weight: 400;
+      font-size: 1.6rem;
+      line-height: 19px;
+      color: rgba(#ffffff, 0.6);
+    }
+  }
 }

@@ -1,12 +1,27 @@
 .header {
   @include d-f-start;
-  position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
   height: 51px;
   padding: 0 24px;
-  background-color: #fff;
   color: #717D8C;
-  background: rgba(16, 21, 27, 0.7);
-  backdrop-filter: blur(134px);
+  border-bottom: 1px solid #1D252D;
+  z-index: 10;
+  transition: all 0.2s;
+
+  &_mobile-style, &_another-page {
+    background: rgba(16, 21, 27, 0.7);
+    backdrop-filter: blur(134px);
+    border: none;
+  }
+
+  &_move-header {
+    background: rgba(16, 21, 27, 0.7);
+    backdrop-filter: blur(134px);
+    border: none;
+  }
 }
 
 @media (max-width: 575.98px) {

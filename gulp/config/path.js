@@ -11,12 +11,14 @@ export const path = {
 		css: `${buildFolder}/css/`,
 		html: `${buildFolder}/`,
 		images: `${buildFolder}/img/`,
+		video:`${buildFolder}/video/`,
 		fonts: `${buildFolder}/fonts/`,
 		files: `${buildFolder}/files/`
 	},
 	src: {
 		js: `${srcFolder}/js/app.js`,
 		images: `${srcFolder}/img/**/*.{jpg,jpeg,png,gif,webp}`,
+		video: `${srcFolder}/video/**/*.*`,
 		svg: `${srcFolder}/img/**/*.svg`,
 		scss: `${srcFolder}/scss/style.scss`,
 		html: `${srcFolder}/*.html`, //.pug
@@ -28,6 +30,7 @@ export const path = {
 		scss: `${srcFolder}/scss/**/*.scss`,
 		html: `${srcFolder}/**/*.html`, //.pug
 		images: `${srcFolder}/img/**/*.{jpg,jpeg,png,svg,gif,ico,webp}`,
+		video: `${srcFolder}/vide/**/*.*`,
 		files: `${srcFolder}/files/**/*.*`
 	},
 	clean: buildFolder,

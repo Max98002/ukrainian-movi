@@ -1,0 +1,36 @@
+@media (max-width: 991.98px) {
+  .hero {
+    padding-top: 390px;
+
+    &-wrapper {
+      flex-flow: column nowrap;
+      align-items: flex-start;
+    }
+
+    &__title {
+      margin-bottom: 32px;
+    }
+
+    &-info {
+      padding: 0;
+    }
+  }
+}
+
+@media (max-width: 767.98px) {
+  .hero {
+    padding-top: 300px;
+
+    &__title {
+      max-width: 490px;
+      font-size: 3.8rem;
+      line-height: 45px;
+    }
+  }
+}
+
+@media (max-width: 575.98px) {
+  .hero {
+    padding-top: 200px;
+  }
+}

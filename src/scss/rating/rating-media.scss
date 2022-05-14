@@ -1,0 +1,33 @@
+@media (max-width: 991.98px) {
+  .rating {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    padding-top: 15px;
+    padding-bottom: 32px;
+    background: rgba(16, 21, 27, 0.7);
+    backdrop-filter: blur(134px);
+  }
+}
+
+@media (max-width: 575.98px) {
+  .rating {
+    &-no {
+      &-info {
+        &__title {
+          span {
+            font-size: 1.8rem;
+            line-height: 20px;
+          }
+          svg {
+            width: 15px;
+            height: 15px;
+          }
+        }
+      }
+    }
+  }
+}

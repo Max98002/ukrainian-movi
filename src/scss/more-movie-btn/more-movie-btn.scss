@@ -5,7 +5,7 @@
   align-items: center;
   background: linear-gradient(0deg, #0C1016, #0C1016);
   border-radius: 12px;
-  max-height: 423px;
+  max-height: 273px;
 
   &__click {
     display: grid;
@@ -58,6 +58,6 @@
 
 @media (max-width: 375px) {
   .more-movie-btn {
-    max-height: 218px;
+    max-height: 200px;
   }
 }

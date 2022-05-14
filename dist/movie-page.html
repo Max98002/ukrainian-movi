@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="ua">
+ <head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.min.css">
+	<title>Сторінка Фільма</title>
+</head>
+
+<body>
+
+  <header class="header">
+
+  <button class="burger">
+  <span class="burger__line burger__line_top"></span>
+  <span class="burger__line burger__line_center"></span>
+  <span class="burger__line burger__line_bottom"></span>
+</button>
+
+  <nav class="nav">
+  <a href="#" class="nav__link">Фільми</a>
+  <a href="#" class="nav__link">Серіали</a>
+  <a href="#" class="nav__link">Мультфільми</a>
+</nav>
+
+  <div class="search">
+  <div class="search-dandruff-icon">
+    <svg width="13" height="13" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path
+        d="M13.2716 12.1684L10.3312 9.22812C11.0391 8.28573 11.4213 7.13865 11.42 5.96C11.42 2.94937 8.97062 0.5 5.96 0.5C2.94937 0.5 0.5 2.94937 0.5 5.96C0.5 8.97062 2.94937 11.42 5.96 11.42C7.13865 11.4213 8.28573 11.0391 9.22812 10.3312L12.1684 13.2716C12.3173 13.4046 12.5114 13.4756 12.711 13.47C12.9105 13.4645 13.1004 13.3827 13.2415 13.2415C13.3827 13.1004 13.4645 12.9105 13.47 12.711C13.4756 12.5114 13.4046 12.3173 13.2716 12.1684ZM2.06 5.96C2.06 5.18865 2.28873 4.43463 2.71727 3.79328C3.14581 3.15192 3.7549 2.65205 4.46753 2.35687C5.18017 2.06169 5.96433 1.98446 6.72085 2.13494C7.47738 2.28542 8.17229 2.65686 8.71772 3.20228C9.26314 3.74771 9.63458 4.44262 9.78506 5.19915C9.93554 5.95567 9.85831 6.73983 9.56313 7.45246C9.26795 8.1651 8.76807 8.77419 8.12672 9.20273C7.48537 9.63127 6.73135 9.86 5.96 9.86C4.92604 9.85876 3.93478 9.44747 3.20365 8.71635C2.47253 7.98522 2.06124 6.99396 2.06 5.96Z"
+        fill="#485462" />
+    </svg>
+  </div>
+  <input class="search-input" type="text" placeholder="Шукай за назвою, актором або персонажем...">
+  <button class="search-close-icon">
+    <svg class="search-close__icon" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path
+        d="M8.65731 7.00008L13.296 2.36141C13.5161 2.14165 13.64 1.84343 13.6402 1.53237C13.6405 1.2213 13.5172 0.922867 13.2974 0.702716C13.0777 0.482566 12.7795 0.358733 12.4684 0.358458C12.1573 0.358183 11.8589 0.48149 11.6388 0.701252L7.00008 5.33992L2.36141 0.701252C2.14126 0.481101 1.84267 0.357422 1.53133 0.357422C1.21999 0.357422 0.921402 0.481101 0.701252 0.701252C0.481101 0.921402 0.357422 1.21999 0.357422 1.53133C0.357422 1.84267 0.481101 2.14126 0.701252 2.36141L5.33992 7.00008L0.701252 11.6388C0.481101 11.8589 0.357422 12.1575 0.357422 12.4688C0.357422 12.7802 0.481101 13.0788 0.701252 13.2989C0.921402 13.5191 1.21999 13.6427 1.53133 13.6427C1.84267 13.6427 2.14126 13.5191 2.36141 13.2989L7.00008 8.66024L11.6388 13.2989C11.8589 13.5191 12.1575 13.6427 12.4688 13.6427C12.7802 13.6427 13.0788 13.5191 13.2989 13.2989C13.5191 13.0788 13.6427 12.7802 13.6427 12.4688C13.6427 12.1575 13.5191 11.8589 13.2989 11.6388L8.65731 7.00008Z"
+        fill="#545D6C" />
+    </svg>
+  </button>
+
+  <div class="filter filter_hidden">
+
+  <span class="filter_no-results_mobile">Шукай за назвою, актором або персонажем</span>
+  <!-- Мобільний плейсхолдер -->
+
+  <!-- //Шаблон фільтра пошуку -->
+  <ul hidden class="filter-block">
+    <li class="filter-block__item"><a href="#" class="filter-block__link">Я, "Побєда" і Берлін</a></li>
+    <li class="filter-block__item"><a href="#" class="filter-block__link">Я перемога</a></li>
+    <li class="filter-block__item"><a href="#" class="filter-block__link">Ярослав Бліндар</a></li>
+    <li class="filter-block__item"><a href="#" class="filter-block__link">Хто ти і хто я?</a></li>
+    <li class="filter-block__item"><a href="#" class="filter-block__link">Семен ти Яків</a></li>
+    <li class="filter-block__item"><a href="#" class="filter-block__link">Ясність розуму</a></li>
+    <li class="filter-block__item"><a href="#" class="filter-block__link">Я перемога</a></li>
+  </ul>
+
+  <!-- //Шаблон історії пошуку -->
+  <ul hidden class="filter-block filter-block-history">
+    <li class="filter-block__item filter-block-history__item"><a href="#" class="filter-block__link filter-block-history__link">Я, "Побєда" і Берлін</a></li>
+    <li class="filter-block__item filter-block-history__item"><a href="#" class="filter-block__link filter-block-history__link">Я перемога</a></li>
+    <li class="filter-block__item filter-block-history__item"><a href="#" class="filter-block__link filter-block-history__link">Ярослав Бліндар</a></li>
+    <li class="filter-block__item filter-block-history__item"><a href="#" class="filter-block__link filter-block-history__link">Хто ти і хто я?</a></li>
+    <li class="filter-block__item filter-block-history__item"><a href="#" class="filter-block__link filter-block-history__link">Семен ти Яків</a></li>
+    <li class="filter-block__item filter-block-history__item"><a href="#" class="filter-block__link filter-block-history__link">Ясність розуму</a></li>
+    <li class="filter-block__item filter-block-history__item"><a href="#" class="filter-block__link filter-block-history__link">Я перемога</a></li>
+  </ul>
+
+  <!-- Заглушка нічого не знайдено -->
+  <span class="filter_no-results">Немає результатів</span>
+
+</div>
+</div>
+
+  <div class="header-btns">
+  <button class="header__button header__button_enter">
+    <div class="header__icon_enter header__icon">
+      <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M11.1811 7.74352C11.3371 7.58752 11.4149 7.36921 11.4149 7.16653C11.4149 6.9482 11.3369 6.74543 11.1811 6.58953L7.40702 2.81549C7.07947 2.48794 6.56494 2.48794 6.23738 2.81549C5.90983 3.14305 5.90983 3.65758 6.23738 3.98513L8.60788 6.35563L1.49647 6.35552C1.04426 6.35552 0.669922 6.72983 0.669922 7.18207C0.669922 7.63427 1.04423 8.00861 1.49647 8.00861H8.62348L6.23741 10.3635C5.90985 10.6911 5.90985 11.2056 6.23741 11.5332C6.56496 11.8607 7.07949 11.8607 7.40705 11.5332L11.1811 7.74352Z"
+          fill="white" />
+        <path
+          d="M10.5274 1.06873C10.5274 1.52094 10.9017 1.89528 11.3539 1.89528H13.8492V12.4532H11.3539C10.9017 12.4532 10.5274 12.8275 10.5274 13.2798C10.5274 13.732 10.9017 14.1063 11.3539 14.1063H14.6757C15.1279 14.1063 15.5022 13.732 15.5022 13.2798L15.5021 1.06873C15.5021 0.616528 15.1278 0.242188 14.6756 0.242188H11.3382C10.886 0.242188 10.5273 0.600849 10.5273 1.06873H10.5274Z"
+          fill="white" />
+      </svg>
+    </div>
+    <span class="header__button_text">Увійти</span>
+  </button>
+
+  <button hidden class="header__button header__button_user">
+    <div class="header__icon_user header__icon">
+      <svg width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M13.4444 15.0007V13.4451C13.4444 12.62 13.1167 11.8287 12.5332 11.2452C11.9498 10.6618 11.1585 10.334 10.3333 10.334H4.11111C3.28599 10.334 2.49467 10.6618 1.91122 11.2452C1.32778 11.8287 1 12.62 1 13.4451V15.0007"
+          stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        <path
+          d="M7.22244 7.22222C8.94066 7.22222 10.3335 5.82933 10.3335 4.11111C10.3335 2.39289 8.94066 1 7.22244 1C5.50422 1 4.11133 2.39289 4.11133 4.11111C4.11133 5.82933 5.50422 7.22222 7.22244 7.22222Z"
+          stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+      </svg>
+    </div>
+    <span class="header__button_text">Профіль</span>
+  </button>
+</div>
+
+</header>
+
+  <main>
+
+    <aside class="aside back-element">
+  <button class="button button-back">
+    <img src="./img/icons/icons.svg#back-arrow" alt="">
+  </button>
+  
+  <button class="button button-share">
+    <span>Поділитись</span>
+    <img src="./img/icons/icons.svg#share" alt="">
+  </button>
+</aside>
+
+    <header class="info-movie">
+  <div class="info-movie__wrapper">
+    <div class="info-movie__names-block">
+      <ul class="info-movie-list">
+        <li class="info-movie-list__item">Фільм</li>
+        <li class="info-movie-list__item">2022</li>
+        <li class="info-movie-list__item">18+</li>
+      </ul>
+      <h3 class="info-movie__title">Я, "Побєда" і Берлін</h3>
+    </div>
+    <aside class="rating">
+  <!-- Блок якщо оцінок ще немає -->
+  <div hidden class="rating-no">
+    <div class="rating-no-info">
+      <span class="rating-no-info__text">Оцінок немає</span>
+      <div class="rating-no-info__title">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M10.5986 0.991229C10.5433 0.881294 10.4578 0.788736 10.3518 0.724017C10.2458 0.659298 10.1235 0.625 9.99871 0.625C9.8739 0.625 9.75158 0.659298 9.64558 0.724017C9.53958 0.788736 9.45412 0.881294 9.39886 0.991229L6.67211 6.42109L0.572828 7.29204C0.449323 7.30966 0.333298 7.36086 0.237867 7.43987C0.142437 7.51887 0.0714062 7.62253 0.0328047 7.73911C-0.00579683 7.85569 -0.0104302 7.98056 0.0194284 8.0996C0.0492871 8.21863 0.112447 8.32709 0.201769 8.41271L4.61523 12.6387L3.57341 18.6065C3.55226 18.7274 3.56596 18.8516 3.61295 18.9652C3.65995 19.0788 3.73836 19.1773 3.83933 19.2494C3.9403 19.3215 4.0598 19.3644 4.18431 19.3733C4.30881 19.3821 4.43337 19.3566 4.54388 19.2996L9.99916 16.4817L15.4553 19.2996C15.5658 19.3565 15.6902 19.382 15.8146 19.3732C15.939 19.3643 16.0585 19.3215 16.1594 19.2495C16.2603 19.1775 16.3388 19.0792 16.3858 18.9658C16.4329 18.8523 16.4467 18.7282 16.4258 18.6074L15.384 12.6387L19.7974 8.41271C19.887 8.32712 19.9504 8.2186 19.9804 8.09944C20.0104 7.98027 20.0059 7.85524 19.9673 7.73849C19.9286 7.62175 19.8575 7.51796 19.7619 7.4389C19.6663 7.35984 19.5501 7.30866 19.4264 7.29116L13.3271 6.42109L10.5986 0.991229Z"
+            fill="white" />
+        </svg>
+        <span>Оціни першим</span>
+      </div>
+    </div>
+    <button class="button button__rating">
+      <span>Оцінити</span>
+      <img src="./img/icons/icons.svg#estimates" alt="">
+    </button>
+  </div>
+
+  <!-- Блок твоя оцінка -->
+  <div hidden class="rating-appreciated">
+    <div class="rating-appreciated-viewer">
+      <div class="rating-appreciated__wrapper">
+        <span class="rating-appreciated-viewer__text">Оцінка 341 глядача</span>
+        <div class="rating-appreciated-viewer__score">
+          <svg class="rating-appreciated-viewer-icon_orange" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M10.5986 0.991229C10.5433 0.881294 10.4578 0.788736 10.3518 0.724017C10.2458 0.659298 10.1235 0.625 9.99871 0.625C9.8739 0.625 9.75158 0.659298 9.64558 0.724017C9.53958 0.788736 9.45412 0.881294 9.39886 0.991229L6.67211 6.42109L0.572828 7.29204C0.449323 7.30966 0.333298 7.36086 0.237867 7.43987C0.142437 7.51887 0.0714062 7.62253 0.0328047 7.73911C-0.00579683 7.85569 -0.0104302 7.98056 0.0194284 8.0996C0.0492871 8.21863 0.112447 8.32709 0.201769 8.41271L4.61523 12.6387L3.57341 18.6065C3.55226 18.7274 3.56596 18.8516 3.61295 18.9652C3.65995 19.0788 3.73836 19.1773 3.83933 19.2494C3.9403 19.3215 4.0598 19.3644 4.18431 19.3733C4.30881 19.3821 4.43337 19.3566 4.54388 19.2996L9.99916 16.4817L15.4553 19.2996C15.5658 19.3565 15.6902 19.382 15.8146 19.3732C15.939 19.3643 16.0585 19.3215 16.1594 19.2495C16.2603 19.1775 16.3388 19.0792 16.3858 18.9658C16.4329 18.8523 16.4467 18.7282 16.4258 18.6074L15.384 12.6387L19.7974 8.41271C19.887 8.32712 19.9504 8.2186 19.9804 8.09944C20.0104 7.98027 20.0059 7.85524 19.9673 7.73849C19.9286 7.62175 19.8575 7.51796 19.7619 7.4389C19.6663 7.35984 19.5501 7.30866 19.4264 7.29116L13.3271 6.42109L10.5986 0.991229Z"
+              fill="white" />
+          </svg>
+          <div class="rating-appreciated-viewer__number-block">
+            <span class="rating-appreciated-viewer__number-block_white">5.3</span>
+            <span class="rating-appreciated-viewer__number-block_dark">10</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="rating-appreciated-your">
+      <div class="rating-appreciated__wrapper">
+        <span class="rating-appreciated-your__text">Твоя оцінка</span>
+        <div class="rating-appreciated-your__score">
+          <svg class="rating-appreciated-your-icon_blue" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M10.5986 0.991229C10.5433 0.881294 10.4578 0.788736 10.3518 0.724017C10.2458 0.659298 10.1235 0.625 9.99871 0.625C9.8739 0.625 9.75158 0.659298 9.64558 0.724017C9.53958 0.788736 9.45412 0.881294 9.39886 0.991229L6.67211 6.42109L0.572828 7.29204C0.449323 7.30966 0.333298 7.36086 0.237867 7.43987C0.142437 7.51887 0.0714062 7.62253 0.0328047 7.73911C-0.00579683 7.85569 -0.0104302 7.98056 0.0194284 8.0996C0.0492871 8.21863 0.112447 8.32709 0.201769 8.41271L4.61523 12.6387L3.57341 18.6065C3.55226 18.7274 3.56596 18.8516 3.61295 18.9652C3.65995 19.0788 3.73836 19.1773 3.83933 19.2494C3.9403 19.3215 4.0598 19.3644 4.18431 19.3733C4.30881 19.3821 4.43337 19.3566 4.54388 19.2996L9.99916 16.4817L15.4553 19.2996C15.5658 19.3565 15.6902 19.382 15.8146 19.3732C15.939 19.3643 16.0585 19.3215 16.1594 19.2495C16.2603 19.1775 16.3388 19.0792 16.3858 18.9658C16.4329 18.8523 16.4467 18.7282 16.4258 18.6074L15.384 12.6387L19.7974 8.41271C19.887 8.32712 19.9504 8.2186 19.9804 8.09944C20.0104 7.98027 20.0059 7.85524 19.9673 7.73849C19.9286 7.62175 19.8575 7.51796 19.7619 7.4389C19.6663 7.35984 19.5501 7.30866 19.4264 7.29116L13.3271 6.42109L10.5986 0.991229Z"
+              fill="white" />
+          </svg>
+          <div class="rating-appreciated-your__number-block">
+            <span class="rating-appreciated-your__number-block_white">8</span>
+            <span class="rating-appreciated-your__number-block_dark">10</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Блок для початку оцінювання -->
+  <div class="rating-appreciated">
+    <div class="rating-appreciated-viewer">
+      <div class="rating-appreciated__wrapper">
+        <span class="rating-appreciated-viewer__text">Оцінка 341 глядача</span>
+        <div class="rating-appreciated-viewer__score">
+          <svg class="rating-appreciated-viewer-icon_orange" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M10.5986 0.991229C10.5433 0.881294 10.4578 0.788736 10.3518 0.724017C10.2458 0.659298 10.1235 0.625 9.99871 0.625C9.8739 0.625 9.75158 0.659298 9.64558 0.724017C9.53958 0.788736 9.45412 0.881294 9.39886 0.991229L6.67211 6.42109L0.572828 7.29204C0.449323 7.30966 0.333298 7.36086 0.237867 7.43987C0.142437 7.51887 0.0714062 7.62253 0.0328047 7.73911C-0.00579683 7.85569 -0.0104302 7.98056 0.0194284 8.0996C0.0492871 8.21863 0.112447 8.32709 0.201769 8.41271L4.61523 12.6387L3.57341 18.6065C3.55226 18.7274 3.56596 18.8516 3.61295 18.9652C3.65995 19.0788 3.73836 19.1773 3.83933 19.2494C3.9403 19.3215 4.0598 19.3644 4.18431 19.3733C4.30881 19.3821 4.43337 19.3566 4.54388 19.2996L9.99916 16.4817L15.4553 19.2996C15.5658 19.3565 15.6902 19.382 15.8146 19.3732C15.939 19.3643 16.0585 19.3215 16.1594 19.2495C16.2603 19.1775 16.3388 19.0792 16.3858 18.9658C16.4329 18.8523 16.4467 18.7282 16.4258 18.6074L15.384 12.6387L19.7974 8.41271C19.887 8.32712 19.9504 8.2186 19.9804 8.09944C20.0104 7.98027 20.0059 7.85524 19.9673 7.73849C19.9286 7.62175 19.8575 7.51796 19.7619 7.4389C19.6663 7.35984 19.5501 7.30866 19.4264 7.29116L13.3271 6.42109L10.5986 0.991229Z"
+              fill="white" />
+          </svg>
+          <div class="rating-appreciated-viewer__number-block">
+            <span class="rating-appreciated-viewer__number-block_white">5.3</span>
+            <span class="rating-appreciated-viewer__number-block_dark">10</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="button button__rating">
+      <span>Оцінити</span>
+      <img src="./img/icons/icons.svg#estimates" alt="">
+    </button>
+  </div>
+</aside>
+
+<!-- <button class="button button__rating">
+  <span>Оцінити</span>
+  <img src="./img/icons/icons.svg#estimates" alt="">
+</button> -->
+  </div>
+</header>
+
+  </main>
+
+  <footer class="footer">
+  <div class="footer-wrapper">
+    <div class="footer-left">
+      <h3 class="footer-left__title">
+        Сповіщення, про цікавий український контент 👇
+      </h3>
+      <button class="button button__telegram">
+        <span>Telegram channel</span>
+        <img src="./img/icons/icons.svg#telegram-icon" alt="">
+      </button>
+    </div>
+    <div class="footer-right">
+      <h3 class="footer-right__title">Про проект</h3>
+      <p class="footer-right__subtitle">
+        В Україні є багато, якісного українського контенту, але часто ми його просто не помічаємо. Ось ми і вирішили
+        створити сайт, який буде висвітлювати цей контент.
+      </p>
+      <p class="footer-right__subtitle">
+        Ідея доволі проста — одні люди оцінюють контент, а інші люди, завдяки загальним оцінкам, знаходять, що
+        подивитись😊
+      </p>
+    </div>
+  </div>
+</footer>
+
+  <aside class="score-credited">
+  <img class="score-credited__icon" src="./img/score-credited/score-credited.png" alt="">
+  <span class="score-credited__title">Твоя оцінка врахованна</span>
+  <span class="score-credited__subtitle">Дякуємо</span>
+  <button class="score-credited__close">
+    <img src="./img/icons/icons.svg#score-credited" alt="">
+  </button>
+</aside>
+
+
+  <script src="js/app.min.js"></script>
+</body>
+
+</html>

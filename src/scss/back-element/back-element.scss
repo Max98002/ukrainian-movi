@@ -1,0 +1,14 @@
+.back-element {
+  padding-top: 40px;
+  padding-bottom: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media (max-width: 575.98px) {
+  .back-element {
+    padding-top: 25px;
+    padding-bottom: 34px;
+  }
+}

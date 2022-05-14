@@ -22,16 +22,16 @@
     align-items: flex-start;
     background: #02060C;
     transition: left 0.2s;
-    &::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: calc(100vh - 51px);
-      background-color: inherit;
-      z-index: -1;
-    }
+    // &::before {
+    //   content: '';
+    //   position: absolute;
+    //   top: 0;
+    //   left: 0;
+    //   width: 100%;
+    //   height: calc(100vh - 51px);
+    //   background-color: inherit;
+    //   z-index: 11;
+    // }
     &__link {
       width: 100%;
       padding: 16px 24px;
