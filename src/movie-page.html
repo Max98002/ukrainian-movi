@@ -4,15 +4,22 @@
 "title":"Сторінка Фільма"
 })
 
-<body>
+<body class="p-top">
 
-  @@include('html/header.html',{})
+  @@include('html/header.html',{
+    "class": "header",
+    "another-page-class": "header_another-page"
+  })
 
   <main>
 
     @@include('html/back-element/back-element.html')
 
     @@include('html/movie-page/info-movie/info-movie.html')
+
+    @@include('html/movie-page/watch-movie/watch-movie.html')
+
+    @@include('html/movie-page/details/details.html')
 
   </main>
 

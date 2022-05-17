@@ -1,0 +1,21 @@
+<section class="watch-movie">
+  <div class="watch-movie-wrapper">
+    <div class="watch-movie-block">
+      <video class="watch-movie-block-video">
+        <source src="./video/test-video.mov" type="video/mp4">
+      </video>
+      <button class="button button__trailer watch-movie-block__btn">
+        <img src="./img/icons/icons.svg#play" class="svg-play-dims" alt="play" />
+        <span>Дивитись трейлер</span>
+      </button>
+      @@include('../../lines/lines.html', {
+        "mainClass": "lines-block",
+        "another": "lines-block_watch-movie"
+      })
+    </div>
+    <div class="watch-movie-baner">
+      <img src="./img/movie-card/movie-card.jpg" alt="">
+    </div>
+
+  </div>
+</section>
