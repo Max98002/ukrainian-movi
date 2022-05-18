@@ -9,3 +9,12 @@
     }
   }
 }
+
+@media (max-width: 575.98px) {
+  .footer {
+    &-wrapper {
+      padding-top: 30px;
+      padding-bottom: 96px;
+    }
+  }
+}

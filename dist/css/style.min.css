@@ -2514,7 +2514,7 @@ button {
   }
 }
 @media (max-width: 575.98px) {
-  .details-movie {
+  .details-movie-wrapper {
     padding-top: 40px;
     padding-bottom: 80px;
   }
@@ -2571,5 +2571,11 @@ button {
   .footer-left {
     margin: 0;
     margin-bottom: 32px;
+  }
+}
+@media (max-width: 575.98px) {
+  .footer-wrapper {
+    padding-top: 30px;
+    padding-bottom: 96px;
   }
 }
