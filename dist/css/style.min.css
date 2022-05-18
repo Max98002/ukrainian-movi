@@ -1925,8 +1925,9 @@ button {
     justify-content: center;
     padding-top: 15px;
     padding-bottom: 32px;
-    background: rgba(16, 21, 27, 0.7);
+    background: rgba(16, 21, 27, 0.8);
     backdrop-filter: blur(134px);
+    z-index: 10;
   }
 }
 @media (max-width: 575.98px) {
@@ -2306,7 +2307,6 @@ button {
   padding-bottom: 72px;
   padding-top: 64px;
   border-bottom: 1px solid #1F2732;
-  border-radius: 24px;
 }
 
 .glide__slide {
@@ -2420,6 +2420,9 @@ button {
     padding-bottom: 40px;
   }
 
+  .glide {
+    max-height: 170px;
+  }
   .glide__slides {
     max-height: 170px;
   }
