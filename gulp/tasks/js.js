@@ -12,7 +12,29 @@ export const js = () => {
 			mode: app.isBuild ? 'production' : 'development',
 			output: {
 				filename: 'app.min.js',
-			}
+			},
+			module: {
+				rules: [{
+						test: /\.css$/,
+						use: ['style-loader', 'css-loader']
+					},
+					// {
+					// 	test: /\.m?js$/,
+					// 	exclude: /(node_modules|bower_components)/,
+					// 	use: {
+					// 		loader: 'babel-loader',
+					// 		options: {
+					// 			presets: [
+					// 				['@babel/preset-env', {
+					// 					corejs: 3,
+					// 					useBuiltIns: "usage"
+					// 				}]
+					// 			]
+					// 		}
+					// 	}
+					// }
+				]
+			},
 		}))
 		.pipe(app.gulp.dest(app.path.build.js))
 		.pipe(app.plugins.browsersync.stream());
