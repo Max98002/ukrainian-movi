@@ -24,14 +24,11 @@
 @media (max-width: 767.98px) {
   .movie-list-wrapper {
     grid-template-columns: repeat(3, 1fr);
-    column-gap: 10px;
-    row-gap: 48px;
   }
 }
 @media (max-width: 575.98px) {
   .movie-list-wrapper {
     grid-template-columns: repeat(2, 1fr);
-    column-gap: 10px;
     row-gap: 30px;
     margin-bottom: 64px;
   }

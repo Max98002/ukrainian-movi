@@ -169,9 +169,44 @@
       line-height: 20px;
       color: #FFFFFF;
     }
+
     svg {
       width: 15px;
       height: 15px;
+    }
+  }
+
+  &__log-out {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    transition: all 0.2s;
+
+    span {
+      margin-right: 16px;
+      font-weight: 400;
+      font-size: 1.6rem;
+      line-height: 19px;
+      color: #ffffff;
+    }
+
+    &_img {
+      width: 32px;
+      height: 32px;
+      background: #192028;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      img {
+        width: 16px;
+        height: 16px;
+      }
+    }
+    &:hover {
+      .button__log-out_img {
+        background: #384656;
+      }
     }
   }
 

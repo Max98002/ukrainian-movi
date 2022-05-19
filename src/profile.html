@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ua">
+@@include('html/head.html',{
+"title":"Профілі користувача"
+})
+
+<body class="p-top">
+
+  @@include('html/header.html',{
+    "class": "header",
+    "another-page-class": "header_another-page"
+  })
+
+  <main>
+    @@include('html/profile/profile-title.html')
+
+    @@include('html/profile/profile-user.html')
+
+    @@include('html/profile/my-estimates.html')
+  </main>
+
+  @@include('html/footer.html',{})
+
+  <script src="js/app.min.js"></script>
+</body>
+
+</html>

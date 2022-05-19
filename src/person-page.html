@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ua">
+@@include('html/head.html',{
+"title":"Сторінка актора"
+})
+
+<body class="p-top">
+
+  @@include('html/header.html',{
+    "class": "header",
+    "another-page-class": "header_another-page"
+  })
+
+  <main>
+    @@include('html/back-element/back-element.html')
+
+    @@include('html/person-page/actor-block/actor-block.html')
+
+    @@include('html/person-page/filmography/filmography.html')
+  </main>
+
+  @@include('html/footer.html',{})
+
+  <script src="js/app.min.js"></script>
+</body>
+
+</html>

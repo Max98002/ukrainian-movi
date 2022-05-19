@@ -1,0 +1,115 @@
+.my-estimates {
+  margin-bottom: 200px;
+
+  &-header {
+    border-bottom: 1px solid #1E2630;
+    margin-bottom: 32px;
+
+    &-block {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+
+      &__item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+
+        &:not(:last-child) {
+          margin-right: 24px;
+        }
+
+        &::before {
+          content: '';
+          position: absolute;
+          bottom: 0;
+          width: 100%;
+          height: 3px;
+          background: #FFFFFF;
+          border-radius: 4px 4px 0px 0px;
+        }
+      }
+
+      &__text {
+        padding: 0 16px;
+        padding-bottom: 16px;
+        font-weight: 400;
+        font-size: 1.6rem;
+        line-height: 19px;
+        cursor: pointer;
+      }
+    }
+  }
+
+  &-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 180px);
+    grid-auto-rows: auto;
+    justify-content: space-between;
+  }
+
+  &-no-ratings {
+    display: flex;
+    justify-content: center;
+    margin-top: 89px;
+    margin-bottom: 300px;
+    &__img {
+      width: 256px;
+      height: 256px;
+      background: #0C1016;
+      border-radius: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img {
+        width: 90px;
+        height: 90px;
+        transform: rotate(15.7deg);
+      }
+    }
+  }
+}
+
+@media (max-width: 991.98px) {
+  .my-estimates {
+    &-cards {
+      grid-template-columns: repeat(2, 180px);
+      row-gap: 40px;
+      justify-content: space-around;
+    }
+  }
+}
+
+@media (max-width: 575.98px) {
+  .my-estimates {
+    margin-bottom: 100px;
+
+    &-header {
+      margin-bottom: 24px;
+    }
+
+    &-cards {
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: 16px;
+      row-gap: 40px;
+      justify-content: space-between;
+    }
+
+    &-no-ratings {
+      margin-top: 96px;
+      margin-bottom: 250px;
+      &__img {
+        width: 156px;
+        height: 156px;
+        img {
+          width: 55px;
+          height: 55px;
+        }
+      }
+    }
+  }
+}
