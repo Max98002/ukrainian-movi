@@ -11,6 +11,11 @@
     background: rgba(16, 21, 27, .8);
     backdrop-filter: blur(134px);
     z-index: 10;
+    &-appreciated {
+      padding: 0 24px;
+      width: 100%;
+      justify-content: space-between;
+    }
   }
 }
 

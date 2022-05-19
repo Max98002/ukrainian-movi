@@ -43,6 +43,9 @@
     }
   }
   .glide {
+    &__slide {
+      border-radius: 8px;
+    }
     &__slides {
       max-height: 250px;
     }

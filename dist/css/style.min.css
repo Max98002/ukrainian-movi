@@ -2023,6 +2023,11 @@ button {
     backdrop-filter: blur(134px);
     z-index: 10;
   }
+  .rating-appreciated {
+    padding: 0 24px;
+    width: 100%;
+    justify-content: space-between;
+  }
 }
 @media (max-width: 575.98px) {
   .rating-no-info__title span {
@@ -2223,6 +2228,7 @@ button {
 }
 .details-tags__tag:hover {
   background: #384656;
+  cursor: pointer;
 }
 .details-tags__tag:not(:last-child) {
   margin-right: 8px;
@@ -2316,11 +2322,15 @@ button {
   align-self: flex-start;
   justify-content: flex-start;
 }
-.actors-blocks {
+.actors-blocks__wrapper {
   display: grid;
   grid-template-columns: repeat(2, minmax(auto, 376px));
-  grid-template-rows: repeat(3, 96px) 40px;
+  grid-template-rows: repeat(3, 96px);
   gap: 16px;
+}
+.actors-blocks__all-actors {
+  margin-top: 40px;
+  margin-left: 16px;
 }
 .actors-block {
   display: grid;
@@ -2329,6 +2339,10 @@ button {
   padding: 16px;
   background: #02060C;
   border-radius: 16px;
+}
+.actors-block:hover {
+  background-color: #384656;
+  cursor: pointer;
 }
 .actors-block__img {
   width: 64px;
@@ -2356,10 +2370,6 @@ button {
   line-height: 19px;
   color: #60647C;
 }
-.actors__all-actors {
-  align-self: flex-start;
-  justify-self: flex-start;
-}
 
 @media (max-width: 1199.98px) {
   .actors-wrapper {
@@ -2383,13 +2393,16 @@ button {
     padding-top: 40px;
     padding-bottom: 0;
   }
-  .actors-blocks {
+  .actors-blocks__wrapper {
     grid-template-columns: 1fr;
     grid-template-rows: 96px;
     grid-auto-rows: 96px;
   }
-  .actors__all-actors {
-    justify-self: stretch;
+  .actors-blocks__all-actors {
+    width: 100%;
+    margin: 0;
+    margin-top: 24px;
+    margin-bottom: 40px;
   }
 }
 .images-wrapper {
@@ -2500,6 +2513,9 @@ button {
     row-gap: 24px;
   }
 
+  .glide__slide {
+    border-radius: 8px;
+  }
   .glide__slides {
     max-height: 250px;
   }
@@ -2540,7 +2556,7 @@ button {
   width: 768px;
 }
 .details-movie-info__name {
-  font-weight: 600;
+  font-weight: 500;
   font-size: 1.6rem;
   line-height: 20px;
   color: #5D6874;

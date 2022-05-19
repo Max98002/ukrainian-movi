@@ -14,10 +14,16 @@
   }
 
   &-blocks {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(auto, 376px));
-    grid-template-rows: repeat(3, 96px) 40px;
-    gap: 16px;
+    &__wrapper {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(auto, 376px));
+      grid-template-rows: repeat(3, 96px);
+      gap: 16px;
+    }
+    &__all-actors {
+      margin-top: 40px;
+      margin-left: 16px;
+    }
   }
 
   &-block {
@@ -27,6 +33,11 @@
     padding: 16px;
     background: #02060C;
     border-radius: 16px;
+
+    &:hover {
+      background-color: #384656;
+      cursor: pointer;
+    }
 
     &__img {
       width: 64px;
@@ -58,10 +69,5 @@
       line-height: 19px;
       color: #60647C;
     }
-  }
-
-  &__all-actors {
-    align-self: flex-start;
-    justify-self: flex-start;
   }
 }
