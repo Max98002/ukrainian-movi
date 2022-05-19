@@ -879,6 +879,7 @@ button {
 .header_mobile-style, .header_another-page {
   background: rgba(16, 21, 27, 0.7);
   backdrop-filter: blur(134px);
+  -webkit-backdrop-filter: blur(134px);
   border: none;
 }
 .header_move-header {
@@ -1575,6 +1576,7 @@ button {
 .movie-card__img {
   overflow: hidden;
   border-radius: 12px;
+  transition: all 0.2s;
 }
 .movie-card__img img {
   width: 100%;
@@ -1694,6 +1696,12 @@ button {
 }
 .movie-card-estimates__hover-text_my {
   width: 133px;
+}
+.movie-card:hover .movie-card__img {
+  transform: scale(1.05);
+}
+.movie-card:hover .movie-card__title {
+  color: #CDDAE8;
 }
 
 @media (max-width: 575.98px) {
@@ -2019,8 +2027,9 @@ button {
     justify-content: center;
     padding-top: 15px;
     padding-bottom: 32px;
-    background: rgba(16, 21, 27, 0.8);
+    background: rgba(16, 21, 27, 0.7);
     backdrop-filter: blur(134px);
+    -webkit-backdrop-filter: blur(134px);
     z-index: 10;
   }
   .rating-appreciated {

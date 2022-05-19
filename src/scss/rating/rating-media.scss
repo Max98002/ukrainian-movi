@@ -8,8 +8,9 @@
     justify-content: center;
     padding-top: 15px;
     padding-bottom: 32px;
-    background: rgba(16, 21, 27, .8);
+    background: rgba(16, 21, 27, 0.7);
     backdrop-filter: blur(134px);
+    -webkit-backdrop-filter: blur(134px);
     z-index: 10;
     &-appreciated {
       padding: 0 24px;

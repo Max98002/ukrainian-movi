@@ -7,6 +7,7 @@
   &__img {
     overflow: hidden;
     border-radius: 12px;
+    transition: all 0.2s;
 
     img {
       width: 100%;
@@ -150,6 +151,15 @@
       &_my {
         width: 133px;
       }
+    }
+  }
+
+  &:hover {
+    .movie-card__img {
+      transform: scale(1.05);
+    }
+    .movie-card__title {
+      color: #CDDAE8;
     }
   }
 }
