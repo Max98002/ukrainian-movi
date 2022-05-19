@@ -9,11 +9,6 @@
   color: #717D8C;
   border-bottom: 1px solid #1D252D;
 
-  // background: rgba(16, 21, 27, 0.7);
-  // backdrop-filter: blur(134px);
-  // -webkit-backdrop-filter: blur(134px);
-
-
   z-index: 10;
   transition: all 0.2s;
 
@@ -21,7 +16,6 @@
   &_another-page {
     background: rgba(16, 21, 27, 0.7);
     backdrop-filter: blur(134px);
-    -webkit-backdrop-filter: blur(134px);
 
     border: none;
   }

@@ -5,12 +5,15 @@ isWebp();
 import Swiper, { Navigation, Pagination } from 'swiper';
 const swiper = new Swiper();
 */
-import searchBlockStyle from './modules/search-block.js';
-import toggleBurger from "./modules/toggle-burger.js";
-import menuToggle from './modules/menu-toggle.js';
+
 import {
   glide
 } from './modules/glide-slider.js';
+
+import searchBlockStyle from './modules/search-block.js';
+import toggleBurger from "./modules/toggle-burger.js";
+import menuToggle from './modules/menu-toggle.js';
+import activeSelected from './modules/active-selected.js';
 
 window.addEventListener('DOMContentLoaded', () => {
   "use strict";
@@ -24,4 +27,6 @@ window.addEventListener('DOMContentLoaded', () => {
   toggleBurger();
 
   menuToggle();
+
+  activeSelected();
 });
