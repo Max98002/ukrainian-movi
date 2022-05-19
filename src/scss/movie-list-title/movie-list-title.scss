@@ -1,0 +1,38 @@
+.movie-list-title {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+  padding-top: 80px;
+  margin-bottom: 24px;
+
+  &__name {
+    margin: 0;
+    margin-right: 8px;
+    font-weight: 700;
+    font-size: 3.8rem;
+    line-height: 45px;
+    color: #FFFFFF;
+  }
+
+  &__count {
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 17px;
+    background: #07152B;
+    color: #368CFC;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .movie-list-title {
+    padding-top: 32px;
+
+    &__name {
+      font-size: 2.8rem;
+      line-height: 33px;
+    }
+  }
+}

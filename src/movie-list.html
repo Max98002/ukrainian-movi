@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ua">
+@@include('html/head.html',{
+"title":"Спосок фільмів"
+})
+
+<body class="p-top">
+
+  @@include('html/header.html',{
+    "class": "header",
+    "another-page-class": "header_another-page"
+  })
+
+  <main>
+
+    @@include('html/movie-list/movie-list-title/movie-list-title.html')
+
+    @@include('html/movie-list/selected-blocks/selected-blocks.html')
+
+    @@include('html/movie-list/movie-list-wrapper/movie-list-wrapper.html')
+
+    @@include('html/movie-list/pagination/pagination.html')
+
+  </main>
+
+  @@include('html/footer.html',{})
+
+  <script src="js/app.min.js"></script>
+</body>
+
+</html>
