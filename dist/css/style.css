@@ -2691,6 +2691,9 @@ button {
 .selected-blocks__item:not(:last-child) {
   margin-right: 12px;
 }
+.selected-blocks__btn span, .selected-blocks__btn svg {
+  pointer-events: none;
+}
 .selected-blocks__btn_active {
   background: #1B212C;
   border-radius: 12px 12px 0px 0px;

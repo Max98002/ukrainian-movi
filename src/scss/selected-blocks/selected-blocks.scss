@@ -23,6 +23,12 @@
     // }
   }
 
+  &__btn {
+    span, svg {
+      pointer-events: none;
+    }
+  }
+
   &__btn_active {
     background: #1B212C;
     border-radius: 12px 12px 0px 0px;
