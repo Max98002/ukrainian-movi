@@ -13,14 +13,30 @@ const activeSelected = () => {
     }
   }
 
-  btns.forEach((btn, i) => {
-    btn.addEventListener('click', (e) => {
-      const target = e.target;
+  function eventElem(i) {
+    removeStyle();
+    addStyle(i);
+  }
 
-      removeStyle();
-      addStyle(i);
+  if (window.screen.availWidth > 820) {
+    btns.forEach((btn, i) => {
+      btn.addEventListener('click', function () {
+        eventElem(i);
+      });
     })
-  })
+  }
+
+
+
+  if (window.screen.availWidth < 820) {
+    console.log(window.screen.availWidth);
+    btns.forEach((btn, i) => {
+      btn.addEventListener('touchstart', function () {
+        eventElem(i);
+      });
+    })
+  }
+
 
   window.addEventListener('click', (e) => {
     const target = e.target;
@@ -29,7 +45,7 @@ const activeSelected = () => {
       removeStyle();
     }
   })
-  
+
 };
 
 export default activeSelected;

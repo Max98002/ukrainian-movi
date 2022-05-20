@@ -5,7 +5,7 @@ import rename from 'gulp-rename';
 import cleanCss from 'gulp-clean-css'; // Сжатие CSS файла
 import webpcss from 'gulp-webpcss'; // Вывод WEBP изображений
 import autoprefixer from 'gulp-autoprefixer'; // Добавление вендорных префиксов
-import groupCssMediaQueries from 'gulp-group-css-media-queries'; // Групировка медиа запросов
+// import groupCssMediaQueries from 'gulp-group-css-media-queries'; // Групировка медиа запросов
 
 const sass = gulpSass(dartSass);
 
@@ -20,12 +20,12 @@ export const scss = () => {
 			outputStyle: 'compressed'
 		}))
 		.pipe(app.plugins.replace(/@img\//g, '../img/'))
-		.pipe(
-			app.plugins.if(
-				app.isBuild,
-				groupCssMediaQueries()
-			)
-		)
+		// .pipe(
+		// 	app.plugins.if(
+		// 		app.isBuild,
+		// 		groupCssMediaQueries()
+		// 	)
+		// )
 		.pipe(
 			app.plugins.if(
 				app.isBuild,
