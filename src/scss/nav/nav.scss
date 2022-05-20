@@ -21,17 +21,6 @@
     flex-direction: column;
     align-items: flex-start;
     background: #02060C;
-    transition: left 0.2s;
-    // &::before {
-    //   content: '';
-    //   position: absolute;
-    //   top: 0;
-    //   left: 0;
-    //   width: 100%;
-    //   height: calc(100vh - 51px);
-    //   background-color: inherit;
-    //   z-index: 11;
-    // }
     &__link {
       width: 100%;
       padding: 16px 24px;
@@ -43,7 +32,18 @@
       }
     }
     &_active {
+      transition: left 0.4s linear;
       left: 0;
+      &::before {
+        content: '';
+        position: absolute;
+        top: 99%;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: #02060C;
+        z-index: 1;
+      }
     }
   }
 }
@@ -57,7 +57,3 @@
     }
   }
 }
-
-@media (max-width: 991.98px) {}
-
-@media (max-width: 1199.98px) {}

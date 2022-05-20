@@ -1,9 +1,8 @@
-@media (max-width: 991.98px) {}
-
 @media (max-width: 767.98px) {
   .list-movie {
     &-wrapper {
-      grid-template-columns: repeat(auto-fill, 248px);
+      grid-template-columns: repeat(3, 1fr);
+      column-gap: 16px;
     }
   }
 }
@@ -12,6 +11,7 @@
   .list-movie {
     &-wrapper {
       grid-template-columns: repeat(auto-fill, 156px);
+      justify-content: space-around;
       grid-auto-rows: 292px;
       column-gap: 10px;
     }

@@ -11,6 +11,7 @@ const menuToggle = () => {
       if (target && target.parentElement.classList.contains('nav_active')) {
         target.parentElement.classList.remove('nav_active');
         btnBurger.classList.remove('burger_active');
+        document.body.classList.remove('no-scroll');
       }
 
     })
