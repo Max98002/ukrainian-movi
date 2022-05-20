@@ -1,18 +1,26 @@
 const activeSelected = () => {
-  const btns = document.querySelectorAll('.selected-blocks__item');
+  const btns = document.querySelectorAll('.selected-blocks__btn');
 
-  btns.forEach((btn, i) => {
-    btn.addEventListener("click", () => {
+  btns.forEach(btn => {
+    btn.addEventListener('focus', function() {
+      const menu = btn.nextElementSibling;
 
-      const menu = btns[i].querySelector('.selected-blocks-list');
-      const button = btns[i].querySelector('.selected-blocks__btn');
+      this.classList.add('selected-blocks__btn_active');
+      menu.classList.add('selected-blocks-list_active');
 
-      menu.classList.toggle('selected-blocks-list_active');
-      button.classList.toggle('selected-blocks__btn_active');
+    });
+  });
+
+  btns.forEach(btn => {
+    btn.addEventListener('blur', function() {
+      const menu = btn.nextElementSibling;
+
+      this.classList.remove('selected-blocks__btn_active');
+      menu.classList.remove('selected-blocks-list_active');
 
     });
   });
   
-}
+};
 
 export default activeSelected;

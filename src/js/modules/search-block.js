@@ -25,6 +25,22 @@ const searchBlockStyle = () => {
     target.value = '';
   });
 
+  input.addEventListener('blur', (e) => {
+    const target = e.target;
+
+    if (btn.classList.contains('burger_active')) {
+      btn.classList.remove('burger_active');
+      nav.classList.remove('nav_active');
+    }
+
+    dandruff.classList.remove('search-dandruff-icon_focus');
+    close.classList.remove('search-close-icon_focus');
+    searchBlock.classList.remove('search_focus');
+
+    target.setAttribute('placeholder', 'Шукай за назвою, актором або персонажем...');
+    target.value = '';
+  });
+
   close.addEventListener('click', () => {
     dandruff.classList.remove('search-dandruff-icon_focus');
     close.classList.remove('search-close-icon_focus');
