@@ -123,6 +123,9 @@
   }
 
   &__hero {
+    display: flex;
+    align-items: center;
+    flex-flow: row nowrap;
     padding: 12px 24px;
     background: #FFFFFF;
     backdrop-filter: blur(104px);
@@ -136,7 +139,7 @@
       color: #02060C;
     }
 
-    img {
+    img, picture {
       width: 20px;
       height: 20px;
     }
