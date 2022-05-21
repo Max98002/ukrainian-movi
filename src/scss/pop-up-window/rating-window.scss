@@ -64,6 +64,7 @@
       color: #FFFFFF;
 
       &-red-text {
+        display: none;
         margin-top: 8px;
         font-weight: 500;
         font-size: 1.4rem;
@@ -87,7 +88,16 @@
         width: 32px;
         height: 32px;
 
+        &_active {
+          svg {
+            path {
+              fill: #368CFC;
+            }
+          }
+        }
+
         svg {
+          pointer-events: none;
           width: 100%;
           height: 100%;
         }

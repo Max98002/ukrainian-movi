@@ -15,6 +15,7 @@ import toggleBurger from "./modules/toggle-burger.js";
 import menuToggle from './modules/menu-toggle.js';
 import activeSelected from './modules/active-selected.js';
 import modals from "./modules/modals.js";
+import rating from "./modules/rating.js";
 
 window.addEventListener('DOMContentLoaded', () => {
   "use strict";
@@ -41,4 +42,6 @@ window.addEventListener('DOMContentLoaded', () => {
   menuToggle();
 
   activeSelected();
+
+  rating();
 });
