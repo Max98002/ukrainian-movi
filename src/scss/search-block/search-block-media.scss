@@ -1,7 +1,8 @@
 @media (max-width: 575.98px) {
   .search {
     margin-left: 0;
-    width: 63px;
+    margin-right: 8px;
+    width: 30px;
     padding: 0;
     &:hover {
       background: transparent;
@@ -20,11 +21,15 @@
 
       .search-dandruff-icon {
         margin: 0;
-        margin-right: 14px;
+        margin-left: 35px;
+      }
+      .search-input {
+        padding-left: 55px;
       }
     }
 
     &-dandruff-icon {
+      left: 0;
       pointer-events: none;
       svg {
         width: 22px;
@@ -43,7 +48,7 @@
     }
 
     &-input {
-      padding: 0 40px;
+      padding: 0;
       &::placeholder {
         opacity: 0;
       }

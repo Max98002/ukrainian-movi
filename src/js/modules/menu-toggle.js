@@ -4,7 +4,7 @@ const menuToggle = () => {
 
   navs.forEach(btn => {
     btn.addEventListener('click', (e) => {
-      e.preventDefault();
+      // e.preventDefault();
 
       const target = e.target;
 

@@ -14,6 +14,7 @@ import searchBlockStyle from './modules/search-block.js';
 import toggleBurger from "./modules/toggle-burger.js";
 import menuToggle from './modules/menu-toggle.js';
 import activeSelected from './modules/active-selected.js';
+import modals from "./modules/modals.js";
 
 window.addEventListener('DOMContentLoaded', () => {
   "use strict";
@@ -21,6 +22,17 @@ window.addEventListener('DOMContentLoaded', () => {
   if (document.querySelector('.glide')) {
     glide.mount();
   }
+
+  modals();
+
+  window.addEventListener('scroll', () => {
+    let scroll = Math.round(document.documentElement.scrollTop);
+    if (scroll > 50) {
+      document.querySelector('.header').classList.add('header_move-header');
+    } else {
+      document.querySelector('.header').classList.remove('header_move-header');
+    }
+  });
 
   searchBlockStyle();
 

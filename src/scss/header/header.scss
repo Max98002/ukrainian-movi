@@ -16,7 +16,6 @@
   &_another-page {
     background: rgba(16, 21, 27, 0.7);
     backdrop-filter: blur(134px);
-
     border: none;
   }
 
@@ -30,5 +29,8 @@
 @media (max-width: 575.98px) {
   .header {
     height: 63px;
+    background: rgba(16, 21, 27, 0.7);
+    backdrop-filter: blur(134px);
+    border: none;
   }
 }

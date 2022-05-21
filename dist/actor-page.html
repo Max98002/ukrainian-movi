@@ -5,7 +5,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="css/style.min.css">
-	<title>Профілі користувача</title>
+	<title>Сторінка актора</title>
 </head>
 
 <body class="p-top">
@@ -107,183 +107,181 @@
 </header>
 
   <main>
-    <section class="profile-title">
-  <h2 class="profile-title__name">Профіль</h2>
-  <button class="button button__log-out">
-    <span>Вийти</span>
-    <div class="button__log-out_img">
-      <img src="./img/icons/icons.svg#log-out" alt="">
-    </div>
+    <aside class="aside back-element">
+  <a href="index.html" class="button button-back">
+    <img src="./img/icons/icons.svg#back-arrow" alt="">
+  </a>
+  
+  <button class="button button-share">
+    <span>Поділитись</span>
+    <img src="./img/icons/icons.svg#share" alt="">
   </button>
-</section>
+</aside>
 
-    <section class="profile-user">
-  <div class="profile-user-block">
-    <div class="profile-user-block__img">
-      <img src="https://images.unsplash.com/photo-1601569791213-061605c532a2?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2071" alt="">
+    <section class="actor-block">
+  <div class="actor-block-wrapper">
+    <div class="actor-block-img">
+      <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987" alt="">
     </div>
-    <h2 class="profile-user-block__name">Богдан</h2>
-  </div>
-</section>
-
-    <section class="my-estimates">
-  <header class="my-estimates-header">
-    <ul class="my-estimates-header-block">
-      <li class="my-estimates-header-block__item">
-        <span class="my-estimates-header-block__text">Мої оцінки</span>
-      </li>
-    </ul>
-  </header>
-
-  <div class="my-estimates-cards">
-    <a href="movie-page.html" class="movie-card">
-  <div class="movie-card__img">
-    <img src="./img/movie-card/movie-card.jpg" alt="">
-  </div>
-  <div class="movie-card__block-text">
-    <h3 class="movie-card__title">Я, "Побєда" і Берлін</h3>
-    <ul class="movie-card-info">
-      <li class="movie-card-info__item">Фільм</li>
-      <li class="movie-card-info__item">2022</li>
-      <li class="movie-card-info__item">18+</li>
-    </ul>
-  </div>
-  <ul class="movie-card-estimates">
-    <li class="movie-card-estimates__item movie-card-estimates_general">
-      <svg class="movie-card-estimates__icon movie-card-estimates__icon_orange" width="20" height="20"
-        viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path fill-rule="evenodd" clip-rule="evenodd"
-          d="M10.5986 0.991229C10.5433 0.881294 10.4578 0.788736 10.3518 0.724017C10.2458 0.659298 10.1235 0.625 9.99871 0.625C9.8739 0.625 9.75158 0.659298 9.64558 0.724017C9.53958 0.788736 9.45412 0.881294 9.39886 0.991229L6.67211 6.42109L0.572828 7.29204C0.449323 7.30966 0.333298 7.36086 0.237867 7.43987C0.142437 7.51887 0.0714062 7.62253 0.0328047 7.73911C-0.00579683 7.85569 -0.0104302 7.98056 0.0194284 8.0996C0.0492871 8.21863 0.112447 8.32709 0.201769 8.41271L4.61523 12.6387L3.57341 18.6065C3.55226 18.7274 3.56596 18.8516 3.61295 18.9652C3.65995 19.0788 3.73836 19.1773 3.83933 19.2494C3.9403 19.3215 4.0598 19.3644 4.18431 19.3733C4.30881 19.3821 4.43337 19.3566 4.54388 19.2996L9.99916 16.4817L15.4553 19.2996C15.5658 19.3565 15.6902 19.382 15.8146 19.3732C15.939 19.3643 16.0585 19.3215 16.1594 19.2495C16.2603 19.1775 16.3388 19.0792 16.3858 18.9658C16.4329 18.8523 16.4467 18.7282 16.4258 18.6074L15.384 12.6387L19.7974 8.41271C19.887 8.32712 19.9504 8.2186 19.9804 8.09944C20.0104 7.98027 20.0059 7.85524 19.9673 7.73849C19.9286 7.62175 19.8575 7.51796 19.7619 7.4389C19.6663 7.35984 19.5501 7.30866 19.4264 7.29116L13.3271 6.42109L10.5986 0.991229Z"
-          fill="white" />
-      </svg>
-      <span class="movie-card-estimates__count">7</span>
-      <span class="movie-card-estimates__hover-text movie-card-estimates__hover-text_general">Загальний рейтинг</span>
-    </li>
-    <li class="movie-card-estimates__item movie-card-estimates_my">
-      <svg class="movie-card-estimates__icon" width="20" height="20" viewBox="0 0 20 20" fill="none"
-        xmlns="http://www.w3.org/2000/svg">
-        <path fill-rule="evenodd" clip-rule="evenodd"
-          d="M10.5986 0.991229C10.5433 0.881294 10.4578 0.788736 10.3518 0.724017C10.2458 0.659298 10.1235 0.625 9.99871 0.625C9.8739 0.625 9.75158 0.659298 9.64558 0.724017C9.53958 0.788736 9.45412 0.881294 9.39886 0.991229L6.67211 6.42109L0.572828 7.29204C0.449323 7.30966 0.333298 7.36086 0.237867 7.43987C0.142437 7.51887 0.0714062 7.62253 0.0328047 7.73911C-0.00579683 7.85569 -0.0104302 7.98056 0.0194284 8.0996C0.0492871 8.21863 0.112447 8.32709 0.201769 8.41271L4.61523 12.6387L3.57341 18.6065C3.55226 18.7274 3.56596 18.8516 3.61295 18.9652C3.65995 19.0788 3.73836 19.1773 3.83933 19.2494C3.9403 19.3215 4.0598 19.3644 4.18431 19.3733C4.30881 19.3821 4.43337 19.3566 4.54388 19.2996L9.99916 16.4817L15.4553 19.2996C15.5658 19.3565 15.6902 19.382 15.8146 19.3732C15.939 19.3643 16.0585 19.3215 16.1594 19.2495C16.2603 19.1775 16.3388 19.0792 16.3858 18.9658C16.4329 18.8523 16.4467 18.7282 16.4258 18.6074L15.384 12.6387L19.7974 8.41271C19.887 8.32712 19.9504 8.2186 19.9804 8.09944C20.0104 7.98027 20.0059 7.85524 19.9673 7.73849C19.9286 7.62175 19.8575 7.51796 19.7619 7.4389C19.6663 7.35984 19.5501 7.30866 19.4264 7.29116L13.3271 6.42109L10.5986 0.991229Z"
-          fill="white" />
-      </svg>
-      <span class="movie-card-estimates__count">4</span>
-      <span class="movie-card-estimates__hover-text movie-card-estimates__hover-text_my">Твоя оцінка</span>
-    </li>
-  </ul>
-</a>
-    <a href="movie-page.html" class="movie-card">
-  <div class="movie-card__img">
-    <img src="./img/movie-card/movie-card.jpg" alt="">
-  </div>
-  <div class="movie-card__block-text">
-    <h3 class="movie-card__title">Я, "Побєда" і Берлін</h3>
-    <ul class="movie-card-info">
-      <li class="movie-card-info__item">Фільм</li>
-      <li class="movie-card-info__item">2022</li>
-      <li class="movie-card-info__item">18+</li>
-    </ul>
-  </div>
-  <ul class="movie-card-estimates">
-    <li class="movie-card-estimates__item movie-card-estimates_general">
-      <svg class="movie-card-estimates__icon movie-card-estimates__icon_orange" width="20" height="20"
-        viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path fill-rule="evenodd" clip-rule="evenodd"
-          d="M10.5986 0.991229C10.5433 0.881294 10.4578 0.788736 10.3518 0.724017C10.2458 0.659298 10.1235 0.625 9.99871 0.625C9.8739 0.625 9.75158 0.659298 9.64558 0.724017C9.53958 0.788736 9.45412 0.881294 9.39886 0.991229L6.67211 6.42109L0.572828 7.29204C0.449323 7.30966 0.333298 7.36086 0.237867 7.43987C0.142437 7.51887 0.0714062 7.62253 0.0328047 7.73911C-0.00579683 7.85569 -0.0104302 7.98056 0.0194284 8.0996C0.0492871 8.21863 0.112447 8.32709 0.201769 8.41271L4.61523 12.6387L3.57341 18.6065C3.55226 18.7274 3.56596 18.8516 3.61295 18.9652C3.65995 19.0788 3.73836 19.1773 3.83933 19.2494C3.9403 19.3215 4.0598 19.3644 4.18431 19.3733C4.30881 19.3821 4.43337 19.3566 4.54388 19.2996L9.99916 16.4817L15.4553 19.2996C15.5658 19.3565 15.6902 19.382 15.8146 19.3732C15.939 19.3643 16.0585 19.3215 16.1594 19.2495C16.2603 19.1775 16.3388 19.0792 16.3858 18.9658C16.4329 18.8523 16.4467 18.7282 16.4258 18.6074L15.384 12.6387L19.7974 8.41271C19.887 8.32712 19.9504 8.2186 19.9804 8.09944C20.0104 7.98027 20.0059 7.85524 19.9673 7.73849C19.9286 7.62175 19.8575 7.51796 19.7619 7.4389C19.6663 7.35984 19.5501 7.30866 19.4264 7.29116L13.3271 6.42109L10.5986 0.991229Z"
-          fill="white" />
-      </svg>
-      <span class="movie-card-estimates__count">7</span>
-      <span class="movie-card-estimates__hover-text movie-card-estimates__hover-text_general">Загальний рейтинг</span>
-    </li>
-    <li class="movie-card-estimates__item movie-card-estimates_my">
-      <svg class="movie-card-estimates__icon" width="20" height="20" viewBox="0 0 20 20" fill="none"
-        xmlns="http://www.w3.org/2000/svg">
-        <path fill-rule="evenodd" clip-rule="evenodd"
-          d="M10.5986 0.991229C10.5433 0.881294 10.4578 0.788736 10.3518 0.724017C10.2458 0.659298 10.1235 0.625 9.99871 0.625C9.8739 0.625 9.75158 0.659298 9.64558 0.724017C9.53958 0.788736 9.45412 0.881294 9.39886 0.991229L6.67211 6.42109L0.572828 7.29204C0.449323 7.30966 0.333298 7.36086 0.237867 7.43987C0.142437 7.51887 0.0714062 7.62253 0.0328047 7.73911C-0.00579683 7.85569 -0.0104302 7.98056 0.0194284 8.0996C0.0492871 8.21863 0.112447 8.32709 0.201769 8.41271L4.61523 12.6387L3.57341 18.6065C3.55226 18.7274 3.56596 18.8516 3.61295 18.9652C3.65995 19.0788 3.73836 19.1773 3.83933 19.2494C3.9403 19.3215 4.0598 19.3644 4.18431 19.3733C4.30881 19.3821 4.43337 19.3566 4.54388 19.2996L9.99916 16.4817L15.4553 19.2996C15.5658 19.3565 15.6902 19.382 15.8146 19.3732C15.939 19.3643 16.0585 19.3215 16.1594 19.2495C16.2603 19.1775 16.3388 19.0792 16.3858 18.9658C16.4329 18.8523 16.4467 18.7282 16.4258 18.6074L15.384 12.6387L19.7974 8.41271C19.887 8.32712 19.9504 8.2186 19.9804 8.09944C20.0104 7.98027 20.0059 7.85524 19.9673 7.73849C19.9286 7.62175 19.8575 7.51796 19.7619 7.4389C19.6663 7.35984 19.5501 7.30866 19.4264 7.29116L13.3271 6.42109L10.5986 0.991229Z"
-          fill="white" />
-      </svg>
-      <span class="movie-card-estimates__count">4</span>
-      <span class="movie-card-estimates__hover-text movie-card-estimates__hover-text_my">Твоя оцінка</span>
-    </li>
-  </ul>
-</a>
-    <a href="movie-page.html" class="movie-card">
-  <div class="movie-card__img">
-    <img src="./img/movie-card/movie-card.jpg" alt="">
-  </div>
-  <div class="movie-card__block-text">
-    <h3 class="movie-card__title">Я, "Побєда" і Берлін</h3>
-    <ul class="movie-card-info">
-      <li class="movie-card-info__item">Фільм</li>
-      <li class="movie-card-info__item">2022</li>
-      <li class="movie-card-info__item">18+</li>
-    </ul>
-  </div>
-  <ul class="movie-card-estimates">
-    <li class="movie-card-estimates__item movie-card-estimates_general">
-      <svg class="movie-card-estimates__icon movie-card-estimates__icon_orange" width="20" height="20"
-        viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path fill-rule="evenodd" clip-rule="evenodd"
-          d="M10.5986 0.991229C10.5433 0.881294 10.4578 0.788736 10.3518 0.724017C10.2458 0.659298 10.1235 0.625 9.99871 0.625C9.8739 0.625 9.75158 0.659298 9.64558 0.724017C9.53958 0.788736 9.45412 0.881294 9.39886 0.991229L6.67211 6.42109L0.572828 7.29204C0.449323 7.30966 0.333298 7.36086 0.237867 7.43987C0.142437 7.51887 0.0714062 7.62253 0.0328047 7.73911C-0.00579683 7.85569 -0.0104302 7.98056 0.0194284 8.0996C0.0492871 8.21863 0.112447 8.32709 0.201769 8.41271L4.61523 12.6387L3.57341 18.6065C3.55226 18.7274 3.56596 18.8516 3.61295 18.9652C3.65995 19.0788 3.73836 19.1773 3.83933 19.2494C3.9403 19.3215 4.0598 19.3644 4.18431 19.3733C4.30881 19.3821 4.43337 19.3566 4.54388 19.2996L9.99916 16.4817L15.4553 19.2996C15.5658 19.3565 15.6902 19.382 15.8146 19.3732C15.939 19.3643 16.0585 19.3215 16.1594 19.2495C16.2603 19.1775 16.3388 19.0792 16.3858 18.9658C16.4329 18.8523 16.4467 18.7282 16.4258 18.6074L15.384 12.6387L19.7974 8.41271C19.887 8.32712 19.9504 8.2186 19.9804 8.09944C20.0104 7.98027 20.0059 7.85524 19.9673 7.73849C19.9286 7.62175 19.8575 7.51796 19.7619 7.4389C19.6663 7.35984 19.5501 7.30866 19.4264 7.29116L13.3271 6.42109L10.5986 0.991229Z"
-          fill="white" />
-      </svg>
-      <span class="movie-card-estimates__count">7</span>
-      <span class="movie-card-estimates__hover-text movie-card-estimates__hover-text_general">Загальний рейтинг</span>
-    </li>
-    <li class="movie-card-estimates__item movie-card-estimates_my">
-      <svg class="movie-card-estimates__icon" width="20" height="20" viewBox="0 0 20 20" fill="none"
-        xmlns="http://www.w3.org/2000/svg">
-        <path fill-rule="evenodd" clip-rule="evenodd"
-          d="M10.5986 0.991229C10.5433 0.881294 10.4578 0.788736 10.3518 0.724017C10.2458 0.659298 10.1235 0.625 9.99871 0.625C9.8739 0.625 9.75158 0.659298 9.64558 0.724017C9.53958 0.788736 9.45412 0.881294 9.39886 0.991229L6.67211 6.42109L0.572828 7.29204C0.449323 7.30966 0.333298 7.36086 0.237867 7.43987C0.142437 7.51887 0.0714062 7.62253 0.0328047 7.73911C-0.00579683 7.85569 -0.0104302 7.98056 0.0194284 8.0996C0.0492871 8.21863 0.112447 8.32709 0.201769 8.41271L4.61523 12.6387L3.57341 18.6065C3.55226 18.7274 3.56596 18.8516 3.61295 18.9652C3.65995 19.0788 3.73836 19.1773 3.83933 19.2494C3.9403 19.3215 4.0598 19.3644 4.18431 19.3733C4.30881 19.3821 4.43337 19.3566 4.54388 19.2996L9.99916 16.4817L15.4553 19.2996C15.5658 19.3565 15.6902 19.382 15.8146 19.3732C15.939 19.3643 16.0585 19.3215 16.1594 19.2495C16.2603 19.1775 16.3388 19.0792 16.3858 18.9658C16.4329 18.8523 16.4467 18.7282 16.4258 18.6074L15.384 12.6387L19.7974 8.41271C19.887 8.32712 19.9504 8.2186 19.9804 8.09944C20.0104 7.98027 20.0059 7.85524 19.9673 7.73849C19.9286 7.62175 19.8575 7.51796 19.7619 7.4389C19.6663 7.35984 19.5501 7.30866 19.4264 7.29116L13.3271 6.42109L10.5986 0.991229Z"
-          fill="white" />
-      </svg>
-      <span class="movie-card-estimates__count">4</span>
-      <span class="movie-card-estimates__hover-text movie-card-estimates__hover-text_my">Твоя оцінка</span>
-    </li>
-  </ul>
-</a>
-    <a href="movie-page.html" class="movie-card">
-  <div class="movie-card__img">
-    <img src="./img/movie-card/movie-card.jpg" alt="">
-  </div>
-  <div class="movie-card__block-text">
-    <h3 class="movie-card__title">Я, "Побєда" і Берлін</h3>
-    <ul class="movie-card-info">
-      <li class="movie-card-info__item">Фільм</li>
-      <li class="movie-card-info__item">2022</li>
-      <li class="movie-card-info__item">18+</li>
-    </ul>
-  </div>
-  <ul class="movie-card-estimates">
-    <li class="movie-card-estimates__item movie-card-estimates_general">
-      <svg class="movie-card-estimates__icon movie-card-estimates__icon_orange" width="20" height="20"
-        viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path fill-rule="evenodd" clip-rule="evenodd"
-          d="M10.5986 0.991229C10.5433 0.881294 10.4578 0.788736 10.3518 0.724017C10.2458 0.659298 10.1235 0.625 9.99871 0.625C9.8739 0.625 9.75158 0.659298 9.64558 0.724017C9.53958 0.788736 9.45412 0.881294 9.39886 0.991229L6.67211 6.42109L0.572828 7.29204C0.449323 7.30966 0.333298 7.36086 0.237867 7.43987C0.142437 7.51887 0.0714062 7.62253 0.0328047 7.73911C-0.00579683 7.85569 -0.0104302 7.98056 0.0194284 8.0996C0.0492871 8.21863 0.112447 8.32709 0.201769 8.41271L4.61523 12.6387L3.57341 18.6065C3.55226 18.7274 3.56596 18.8516 3.61295 18.9652C3.65995 19.0788 3.73836 19.1773 3.83933 19.2494C3.9403 19.3215 4.0598 19.3644 4.18431 19.3733C4.30881 19.3821 4.43337 19.3566 4.54388 19.2996L9.99916 16.4817L15.4553 19.2996C15.5658 19.3565 15.6902 19.382 15.8146 19.3732C15.939 19.3643 16.0585 19.3215 16.1594 19.2495C16.2603 19.1775 16.3388 19.0792 16.3858 18.9658C16.4329 18.8523 16.4467 18.7282 16.4258 18.6074L15.384 12.6387L19.7974 8.41271C19.887 8.32712 19.9504 8.2186 19.9804 8.09944C20.0104 7.98027 20.0059 7.85524 19.9673 7.73849C19.9286 7.62175 19.8575 7.51796 19.7619 7.4389C19.6663 7.35984 19.5501 7.30866 19.4264 7.29116L13.3271 6.42109L10.5986 0.991229Z"
-          fill="white" />
-      </svg>
-      <span class="movie-card-estimates__count">7</span>
-      <span class="movie-card-estimates__hover-text movie-card-estimates__hover-text_general">Загальний рейтинг</span>
-    </li>
-    <li class="movie-card-estimates__item movie-card-estimates_my">
-      <svg class="movie-card-estimates__icon" width="20" height="20" viewBox="0 0 20 20" fill="none"
-        xmlns="http://www.w3.org/2000/svg">
-        <path fill-rule="evenodd" clip-rule="evenodd"
-          d="M10.5986 0.991229C10.5433 0.881294 10.4578 0.788736 10.3518 0.724017C10.2458 0.659298 10.1235 0.625 9.99871 0.625C9.8739 0.625 9.75158 0.659298 9.64558 0.724017C9.53958 0.788736 9.45412 0.881294 9.39886 0.991229L6.67211 6.42109L0.572828 7.29204C0.449323 7.30966 0.333298 7.36086 0.237867 7.43987C0.142437 7.51887 0.0714062 7.62253 0.0328047 7.73911C-0.00579683 7.85569 -0.0104302 7.98056 0.0194284 8.0996C0.0492871 8.21863 0.112447 8.32709 0.201769 8.41271L4.61523 12.6387L3.57341 18.6065C3.55226 18.7274 3.56596 18.8516 3.61295 18.9652C3.65995 19.0788 3.73836 19.1773 3.83933 19.2494C3.9403 19.3215 4.0598 19.3644 4.18431 19.3733C4.30881 19.3821 4.43337 19.3566 4.54388 19.2996L9.99916 16.4817L15.4553 19.2996C15.5658 19.3565 15.6902 19.382 15.8146 19.3732C15.939 19.3643 16.0585 19.3215 16.1594 19.2495C16.2603 19.1775 16.3388 19.0792 16.3858 18.9658C16.4329 18.8523 16.4467 18.7282 16.4258 18.6074L15.384 12.6387L19.7974 8.41271C19.887 8.32712 19.9504 8.2186 19.9804 8.09944C20.0104 7.98027 20.0059 7.85524 19.9673 7.73849C19.9286 7.62175 19.8575 7.51796 19.7619 7.4389C19.6663 7.35984 19.5501 7.30866 19.4264 7.29116L13.3271 6.42109L10.5986 0.991229Z"
-          fill="white" />
-      </svg>
-      <span class="movie-card-estimates__count">4</span>
-      <span class="movie-card-estimates__hover-text movie-card-estimates__hover-text_my">Твоя оцінка</span>
-    </li>
-  </ul>
-</a>
-  </div>
-
-  <div class="my-estimates-no-ratings">
-    <div class="my-estimates-no-ratings__img">
-      <img src="./img/profile/profile-icon.png" alt="">
+    <div class="actor-block-info">
+      <h3 class="actor-block-info__name">Іванка Бліндар</h3>
+      <span class="actor-block-info__subname">Знявся в <span>23</span> фільмах</span>
+      <a href="#" class="actor-block-info__link">
+        <img src="./img/icons/icons.svg#instagram" alt="">
+      </a>
     </div>
   </div>
+</section>
 
+    <section class="filmography">
+
+  <div class="filmography-info">
+    <h3 class="filmography-info__text">Фільмографія</h3>
+    <span class="filmography-info__count">4</span>
+  </div>
+
+  <div class="filmography-cards">
+    <a href="movie-page.html" class="movie-card">
+  <div class="movie-card__img">
+    <img src="./img/movie-card/movie-card.jpg" alt="">
+  </div>
+  <div class="movie-card__block-text">
+    <h3 class="movie-card__title">Я, "Побєда" і Берлін</h3>
+    <ul class="movie-card-info">
+      <li class="movie-card-info__item">Фільм</li>
+      <li class="movie-card-info__item">2022</li>
+      <li class="movie-card-info__item">18+</li>
+    </ul>
+  </div>
+  <ul class="movie-card-estimates">
+    <li class="movie-card-estimates__item movie-card-estimates_general">
+      <svg class="movie-card-estimates__icon movie-card-estimates__icon_orange" width="20" height="20"
+        viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd"
+          d="M10.5986 0.991229C10.5433 0.881294 10.4578 0.788736 10.3518 0.724017C10.2458 0.659298 10.1235 0.625 9.99871 0.625C9.8739 0.625 9.75158 0.659298 9.64558 0.724017C9.53958 0.788736 9.45412 0.881294 9.39886 0.991229L6.67211 6.42109L0.572828 7.29204C0.449323 7.30966 0.333298 7.36086 0.237867 7.43987C0.142437 7.51887 0.0714062 7.62253 0.0328047 7.73911C-0.00579683 7.85569 -0.0104302 7.98056 0.0194284 8.0996C0.0492871 8.21863 0.112447 8.32709 0.201769 8.41271L4.61523 12.6387L3.57341 18.6065C3.55226 18.7274 3.56596 18.8516 3.61295 18.9652C3.65995 19.0788 3.73836 19.1773 3.83933 19.2494C3.9403 19.3215 4.0598 19.3644 4.18431 19.3733C4.30881 19.3821 4.43337 19.3566 4.54388 19.2996L9.99916 16.4817L15.4553 19.2996C15.5658 19.3565 15.6902 19.382 15.8146 19.3732C15.939 19.3643 16.0585 19.3215 16.1594 19.2495C16.2603 19.1775 16.3388 19.0792 16.3858 18.9658C16.4329 18.8523 16.4467 18.7282 16.4258 18.6074L15.384 12.6387L19.7974 8.41271C19.887 8.32712 19.9504 8.2186 19.9804 8.09944C20.0104 7.98027 20.0059 7.85524 19.9673 7.73849C19.9286 7.62175 19.8575 7.51796 19.7619 7.4389C19.6663 7.35984 19.5501 7.30866 19.4264 7.29116L13.3271 6.42109L10.5986 0.991229Z"
+          fill="white" />
+      </svg>
+      <span class="movie-card-estimates__count">7</span>
+      <span class="movie-card-estimates__hover-text movie-card-estimates__hover-text_general">Загальний рейтинг</span>
+    </li>
+    <li class="movie-card-estimates__item movie-card-estimates_my">
+      <svg class="movie-card-estimates__icon" width="20" height="20" viewBox="0 0 20 20" fill="none"
+        xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd"
+          d="M10.5986 0.991229C10.5433 0.881294 10.4578 0.788736 10.3518 0.724017C10.2458 0.659298 10.1235 0.625 9.99871 0.625C9.8739 0.625 9.75158 0.659298 9.64558 0.724017C9.53958 0.788736 9.45412 0.881294 9.39886 0.991229L6.67211 6.42109L0.572828 7.29204C0.449323 7.30966 0.333298 7.36086 0.237867 7.43987C0.142437 7.51887 0.0714062 7.62253 0.0328047 7.73911C-0.00579683 7.85569 -0.0104302 7.98056 0.0194284 8.0996C0.0492871 8.21863 0.112447 8.32709 0.201769 8.41271L4.61523 12.6387L3.57341 18.6065C3.55226 18.7274 3.56596 18.8516 3.61295 18.9652C3.65995 19.0788 3.73836 19.1773 3.83933 19.2494C3.9403 19.3215 4.0598 19.3644 4.18431 19.3733C4.30881 19.3821 4.43337 19.3566 4.54388 19.2996L9.99916 16.4817L15.4553 19.2996C15.5658 19.3565 15.6902 19.382 15.8146 19.3732C15.939 19.3643 16.0585 19.3215 16.1594 19.2495C16.2603 19.1775 16.3388 19.0792 16.3858 18.9658C16.4329 18.8523 16.4467 18.7282 16.4258 18.6074L15.384 12.6387L19.7974 8.41271C19.887 8.32712 19.9504 8.2186 19.9804 8.09944C20.0104 7.98027 20.0059 7.85524 19.9673 7.73849C19.9286 7.62175 19.8575 7.51796 19.7619 7.4389C19.6663 7.35984 19.5501 7.30866 19.4264 7.29116L13.3271 6.42109L10.5986 0.991229Z"
+          fill="white" />
+      </svg>
+      <span class="movie-card-estimates__count">4</span>
+      <span class="movie-card-estimates__hover-text movie-card-estimates__hover-text_my">Твоя оцінка</span>
+    </li>
+  </ul>
+</a>
+    <a href="movie-page.html" class="movie-card">
+  <div class="movie-card__img">
+    <img src="./img/movie-card/movie-card.jpg" alt="">
+  </div>
+  <div class="movie-card__block-text">
+    <h3 class="movie-card__title">Я, "Побєда" і Берлін</h3>
+    <ul class="movie-card-info">
+      <li class="movie-card-info__item">Фільм</li>
+      <li class="movie-card-info__item">2022</li>
+      <li class="movie-card-info__item">18+</li>
+    </ul>
+  </div>
+  <ul class="movie-card-estimates">
+    <li class="movie-card-estimates__item movie-card-estimates_general">
+      <svg class="movie-card-estimates__icon movie-card-estimates__icon_orange" width="20" height="20"
+        viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd"
+          d="M10.5986 0.991229C10.5433 0.881294 10.4578 0.788736 10.3518 0.724017C10.2458 0.659298 10.1235 0.625 9.99871 0.625C9.8739 0.625 9.75158 0.659298 9.64558 0.724017C9.53958 0.788736 9.45412 0.881294 9.39886 0.991229L6.67211 6.42109L0.572828 7.29204C0.449323 7.30966 0.333298 7.36086 0.237867 7.43987C0.142437 7.51887 0.0714062 7.62253 0.0328047 7.73911C-0.00579683 7.85569 -0.0104302 7.98056 0.0194284 8.0996C0.0492871 8.21863 0.112447 8.32709 0.201769 8.41271L4.61523 12.6387L3.57341 18.6065C3.55226 18.7274 3.56596 18.8516 3.61295 18.9652C3.65995 19.0788 3.73836 19.1773 3.83933 19.2494C3.9403 19.3215 4.0598 19.3644 4.18431 19.3733C4.30881 19.3821 4.43337 19.3566 4.54388 19.2996L9.99916 16.4817L15.4553 19.2996C15.5658 19.3565 15.6902 19.382 15.8146 19.3732C15.939 19.3643 16.0585 19.3215 16.1594 19.2495C16.2603 19.1775 16.3388 19.0792 16.3858 18.9658C16.4329 18.8523 16.4467 18.7282 16.4258 18.6074L15.384 12.6387L19.7974 8.41271C19.887 8.32712 19.9504 8.2186 19.9804 8.09944C20.0104 7.98027 20.0059 7.85524 19.9673 7.73849C19.9286 7.62175 19.8575 7.51796 19.7619 7.4389C19.6663 7.35984 19.5501 7.30866 19.4264 7.29116L13.3271 6.42109L10.5986 0.991229Z"
+          fill="white" />
+      </svg>
+      <span class="movie-card-estimates__count">7</span>
+      <span class="movie-card-estimates__hover-text movie-card-estimates__hover-text_general">Загальний рейтинг</span>
+    </li>
+    <li class="movie-card-estimates__item movie-card-estimates_my">
+      <svg class="movie-card-estimates__icon" width="20" height="20" viewBox="0 0 20 20" fill="none"
+        xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd"
+          d="M10.5986 0.991229C10.5433 0.881294 10.4578 0.788736 10.3518 0.724017C10.2458 0.659298 10.1235 0.625 9.99871 0.625C9.8739 0.625 9.75158 0.659298 9.64558 0.724017C9.53958 0.788736 9.45412 0.881294 9.39886 0.991229L6.67211 6.42109L0.572828 7.29204C0.449323 7.30966 0.333298 7.36086 0.237867 7.43987C0.142437 7.51887 0.0714062 7.62253 0.0328047 7.73911C-0.00579683 7.85569 -0.0104302 7.98056 0.0194284 8.0996C0.0492871 8.21863 0.112447 8.32709 0.201769 8.41271L4.61523 12.6387L3.57341 18.6065C3.55226 18.7274 3.56596 18.8516 3.61295 18.9652C3.65995 19.0788 3.73836 19.1773 3.83933 19.2494C3.9403 19.3215 4.0598 19.3644 4.18431 19.3733C4.30881 19.3821 4.43337 19.3566 4.54388 19.2996L9.99916 16.4817L15.4553 19.2996C15.5658 19.3565 15.6902 19.382 15.8146 19.3732C15.939 19.3643 16.0585 19.3215 16.1594 19.2495C16.2603 19.1775 16.3388 19.0792 16.3858 18.9658C16.4329 18.8523 16.4467 18.7282 16.4258 18.6074L15.384 12.6387L19.7974 8.41271C19.887 8.32712 19.9504 8.2186 19.9804 8.09944C20.0104 7.98027 20.0059 7.85524 19.9673 7.73849C19.9286 7.62175 19.8575 7.51796 19.7619 7.4389C19.6663 7.35984 19.5501 7.30866 19.4264 7.29116L13.3271 6.42109L10.5986 0.991229Z"
+          fill="white" />
+      </svg>
+      <span class="movie-card-estimates__count">4</span>
+      <span class="movie-card-estimates__hover-text movie-card-estimates__hover-text_my">Твоя оцінка</span>
+    </li>
+  </ul>
+</a>
+    <a href="movie-page.html" class="movie-card">
+  <div class="movie-card__img">
+    <img src="./img/movie-card/movie-card.jpg" alt="">
+  </div>
+  <div class="movie-card__block-text">
+    <h3 class="movie-card__title">Я, "Побєда" і Берлін</h3>
+    <ul class="movie-card-info">
+      <li class="movie-card-info__item">Фільм</li>
+      <li class="movie-card-info__item">2022</li>
+      <li class="movie-card-info__item">18+</li>
+    </ul>
+  </div>
+  <ul class="movie-card-estimates">
+    <li class="movie-card-estimates__item movie-card-estimates_general">
+      <svg class="movie-card-estimates__icon movie-card-estimates__icon_orange" width="20" height="20"
+        viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd"
+          d="M10.5986 0.991229C10.5433 0.881294 10.4578 0.788736 10.3518 0.724017C10.2458 0.659298 10.1235 0.625 9.99871 0.625C9.8739 0.625 9.75158 0.659298 9.64558 0.724017C9.53958 0.788736 9.45412 0.881294 9.39886 0.991229L6.67211 6.42109L0.572828 7.29204C0.449323 7.30966 0.333298 7.36086 0.237867 7.43987C0.142437 7.51887 0.0714062 7.62253 0.0328047 7.73911C-0.00579683 7.85569 -0.0104302 7.98056 0.0194284 8.0996C0.0492871 8.21863 0.112447 8.32709 0.201769 8.41271L4.61523 12.6387L3.57341 18.6065C3.55226 18.7274 3.56596 18.8516 3.61295 18.9652C3.65995 19.0788 3.73836 19.1773 3.83933 19.2494C3.9403 19.3215 4.0598 19.3644 4.18431 19.3733C4.30881 19.3821 4.43337 19.3566 4.54388 19.2996L9.99916 16.4817L15.4553 19.2996C15.5658 19.3565 15.6902 19.382 15.8146 19.3732C15.939 19.3643 16.0585 19.3215 16.1594 19.2495C16.2603 19.1775 16.3388 19.0792 16.3858 18.9658C16.4329 18.8523 16.4467 18.7282 16.4258 18.6074L15.384 12.6387L19.7974 8.41271C19.887 8.32712 19.9504 8.2186 19.9804 8.09944C20.0104 7.98027 20.0059 7.85524 19.9673 7.73849C19.9286 7.62175 19.8575 7.51796 19.7619 7.4389C19.6663 7.35984 19.5501 7.30866 19.4264 7.29116L13.3271 6.42109L10.5986 0.991229Z"
+          fill="white" />
+      </svg>
+      <span class="movie-card-estimates__count">7</span>
+      <span class="movie-card-estimates__hover-text movie-card-estimates__hover-text_general">Загальний рейтинг</span>
+    </li>
+    <li class="movie-card-estimates__item movie-card-estimates_my">
+      <svg class="movie-card-estimates__icon" width="20" height="20" viewBox="0 0 20 20" fill="none"
+        xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd"
+          d="M10.5986 0.991229C10.5433 0.881294 10.4578 0.788736 10.3518 0.724017C10.2458 0.659298 10.1235 0.625 9.99871 0.625C9.8739 0.625 9.75158 0.659298 9.64558 0.724017C9.53958 0.788736 9.45412 0.881294 9.39886 0.991229L6.67211 6.42109L0.572828 7.29204C0.449323 7.30966 0.333298 7.36086 0.237867 7.43987C0.142437 7.51887 0.0714062 7.62253 0.0328047 7.73911C-0.00579683 7.85569 -0.0104302 7.98056 0.0194284 8.0996C0.0492871 8.21863 0.112447 8.32709 0.201769 8.41271L4.61523 12.6387L3.57341 18.6065C3.55226 18.7274 3.56596 18.8516 3.61295 18.9652C3.65995 19.0788 3.73836 19.1773 3.83933 19.2494C3.9403 19.3215 4.0598 19.3644 4.18431 19.3733C4.30881 19.3821 4.43337 19.3566 4.54388 19.2996L9.99916 16.4817L15.4553 19.2996C15.5658 19.3565 15.6902 19.382 15.8146 19.3732C15.939 19.3643 16.0585 19.3215 16.1594 19.2495C16.2603 19.1775 16.3388 19.0792 16.3858 18.9658C16.4329 18.8523 16.4467 18.7282 16.4258 18.6074L15.384 12.6387L19.7974 8.41271C19.887 8.32712 19.9504 8.2186 19.9804 8.09944C20.0104 7.98027 20.0059 7.85524 19.9673 7.73849C19.9286 7.62175 19.8575 7.51796 19.7619 7.4389C19.6663 7.35984 19.5501 7.30866 19.4264 7.29116L13.3271 6.42109L10.5986 0.991229Z"
+          fill="white" />
+      </svg>
+      <span class="movie-card-estimates__count">4</span>
+      <span class="movie-card-estimates__hover-text movie-card-estimates__hover-text_my">Твоя оцінка</span>
+    </li>
+  </ul>
+</a>
+    <a href="movie-page.html" class="movie-card">
+  <div class="movie-card__img">
+    <img src="./img/movie-card/movie-card.jpg" alt="">
+  </div>
+  <div class="movie-card__block-text">
+    <h3 class="movie-card__title">Я, "Побєда" і Берлін</h3>
+    <ul class="movie-card-info">
+      <li class="movie-card-info__item">Фільм</li>
+      <li class="movie-card-info__item">2022</li>
+      <li class="movie-card-info__item">18+</li>
+    </ul>
+  </div>
+  <ul class="movie-card-estimates">
+    <li class="movie-card-estimates__item movie-card-estimates_general">
+      <svg class="movie-card-estimates__icon movie-card-estimates__icon_orange" width="20" height="20"
+        viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd"
+          d="M10.5986 0.991229C10.5433 0.881294 10.4578 0.788736 10.3518 0.724017C10.2458 0.659298 10.1235 0.625 9.99871 0.625C9.8739 0.625 9.75158 0.659298 9.64558 0.724017C9.53958 0.788736 9.45412 0.881294 9.39886 0.991229L6.67211 6.42109L0.572828 7.29204C0.449323 7.30966 0.333298 7.36086 0.237867 7.43987C0.142437 7.51887 0.0714062 7.62253 0.0328047 7.73911C-0.00579683 7.85569 -0.0104302 7.98056 0.0194284 8.0996C0.0492871 8.21863 0.112447 8.32709 0.201769 8.41271L4.61523 12.6387L3.57341 18.6065C3.55226 18.7274 3.56596 18.8516 3.61295 18.9652C3.65995 19.0788 3.73836 19.1773 3.83933 19.2494C3.9403 19.3215 4.0598 19.3644 4.18431 19.3733C4.30881 19.3821 4.43337 19.3566 4.54388 19.2996L9.99916 16.4817L15.4553 19.2996C15.5658 19.3565 15.6902 19.382 15.8146 19.3732C15.939 19.3643 16.0585 19.3215 16.1594 19.2495C16.2603 19.1775 16.3388 19.0792 16.3858 18.9658C16.4329 18.8523 16.4467 18.7282 16.4258 18.6074L15.384 12.6387L19.7974 8.41271C19.887 8.32712 19.9504 8.2186 19.9804 8.09944C20.0104 7.98027 20.0059 7.85524 19.9673 7.73849C19.9286 7.62175 19.8575 7.51796 19.7619 7.4389C19.6663 7.35984 19.5501 7.30866 19.4264 7.29116L13.3271 6.42109L10.5986 0.991229Z"
+          fill="white" />
+      </svg>
+      <span class="movie-card-estimates__count">7</span>
+      <span class="movie-card-estimates__hover-text movie-card-estimates__hover-text_general">Загальний рейтинг</span>
+    </li>
+    <li class="movie-card-estimates__item movie-card-estimates_my">
+      <svg class="movie-card-estimates__icon" width="20" height="20" viewBox="0 0 20 20" fill="none"
+        xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd"
+          d="M10.5986 0.991229C10.5433 0.881294 10.4578 0.788736 10.3518 0.724017C10.2458 0.659298 10.1235 0.625 9.99871 0.625C9.8739 0.625 9.75158 0.659298 9.64558 0.724017C9.53958 0.788736 9.45412 0.881294 9.39886 0.991229L6.67211 6.42109L0.572828 7.29204C0.449323 7.30966 0.333298 7.36086 0.237867 7.43987C0.142437 7.51887 0.0714062 7.62253 0.0328047 7.73911C-0.00579683 7.85569 -0.0104302 7.98056 0.0194284 8.0996C0.0492871 8.21863 0.112447 8.32709 0.201769 8.41271L4.61523 12.6387L3.57341 18.6065C3.55226 18.7274 3.56596 18.8516 3.61295 18.9652C3.65995 19.0788 3.73836 19.1773 3.83933 19.2494C3.9403 19.3215 4.0598 19.3644 4.18431 19.3733C4.30881 19.3821 4.43337 19.3566 4.54388 19.2996L9.99916 16.4817L15.4553 19.2996C15.5658 19.3565 15.6902 19.382 15.8146 19.3732C15.939 19.3643 16.0585 19.3215 16.1594 19.2495C16.2603 19.1775 16.3388 19.0792 16.3858 18.9658C16.4329 18.8523 16.4467 18.7282 16.4258 18.6074L15.384 12.6387L19.7974 8.41271C19.887 8.32712 19.9504 8.2186 19.9804 8.09944C20.0104 7.98027 20.0059 7.85524 19.9673 7.73849C19.9286 7.62175 19.8575 7.51796 19.7619 7.4389C19.6663 7.35984 19.5501 7.30866 19.4264 7.29116L13.3271 6.42109L10.5986 0.991229Z"
+          fill="white" />
+      </svg>
+      <span class="movie-card-estimates__count">4</span>
+      <span class="movie-card-estimates__hover-text movie-card-estimates__hover-text_my">Твоя оцінка</span>
+    </li>
+  </ul>
+</a>
+  </div>
 
 </section>
   </main>
@@ -461,7 +459,6 @@
   </div>
 </div>
 
-
   <div data-modal class="login-window">
   <div class="login-dialog">
     <button class="login-close">
@@ -522,7 +519,6 @@
     </div>
   </div>
 </div>
-
 
   <script src="js/app.min.js"></script>
 </body>
