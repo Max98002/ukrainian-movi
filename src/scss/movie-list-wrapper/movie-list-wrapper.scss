@@ -26,13 +26,13 @@
 @media (max-width: 767.98px) {
   .movie-list-wrapper {
     grid-template-columns: repeat(3, 1fr);
+    justify-content: space-between;
   }
 }
 
 @media (max-width: 575.98px) {
   .movie-list-wrapper {
     grid-template-columns: repeat(2, 156px);
-    justify-content: center;
     row-gap: 30px;
     margin-bottom: 64px;
   }

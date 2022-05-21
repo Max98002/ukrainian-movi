@@ -131,6 +131,10 @@
     backdrop-filter: blur(104px);
     border-radius: 12px;
 
+    &:hover {
+      background: #DAE5F1;
+    }
+
     span {
       margin-right: 16px;
       font-weight: 400;

@@ -37,6 +37,9 @@
     &:hover {
       background-color: #384656;
       cursor: pointer;
+      .actors-block__name-hero {
+        color: #FFFFFF;
+      }
     }
 
     &__img {
