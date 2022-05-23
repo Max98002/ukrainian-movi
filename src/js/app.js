@@ -41,7 +41,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
   menuToggle();
 
-  // activeSelected();
+  activeSelected();
 
   rating();
 });

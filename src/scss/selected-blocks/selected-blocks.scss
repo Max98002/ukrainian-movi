@@ -12,20 +12,9 @@
     &:not(:last-child) {
       margin-right: 12px;
     }
-
-    &:hover {
-      .selected-blocks__btn {
-        background: #1B212C;
-        border-radius: 12px 12px 0px 0px;
-        svg {
-          transform: rotate(-180deg);
-        }
-      }
-    }
   }
 
   &__btn {
-
     span,
     svg {
       pointer-events: none;
@@ -76,22 +65,6 @@
 
       &:hover {
         background-color: #384656;
-      }
-    }
-  }
-
-  &-genres {
-    &:hover {
-      .selected-blocks-genres-list {
-        display: flex;
-      }
-    }
-  }
-
-  &-novelty {
-    &:hover {
-      .selected-blocks-novelty-list {
-        display: flex;
       }
     }
   }

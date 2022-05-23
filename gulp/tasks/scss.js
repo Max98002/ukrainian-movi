@@ -17,7 +17,7 @@ export const scss = () => {
 				message: "Error: <%= error.message %>"
 			})))
 		.pipe(sass({
-			outputStyle: 'compressed'
+			outputStyle: 'expanded'
 		}))
 		.pipe(app.plugins.replace(/@img\//g, '../img/'))
 		// .pipe(
@@ -48,7 +48,7 @@ export const scss = () => {
 			)
 		)
 		// Раскомментировать если нужен не сжатый дубль файла стилей
-		// .pipe(app.gulp.dest(app.path.build.css))
+		.pipe(app.gulp.dest(app.path.build.css))
 		.pipe(
 			app.plugins.if(
 				app.isBuild,
