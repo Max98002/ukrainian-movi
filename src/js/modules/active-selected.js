@@ -13,15 +13,11 @@ const activeSelected = () => {
     }
   }
 
-  function eventElem(i) {
-    removeStyle();
-    addStyle(i);
-  }
-
   if (window.screen.availWidth > 820) {
     btns.forEach((btn, i) => {
       btn.addEventListener('click', function () {
-        eventElem(i);
+        removeStyle();
+        addStyle(i);
       });
     })
   }
