@@ -1,14 +1,11 @@
 import isWebp from "./modules/isWebp.js";
 isWebp();
 
-/*
-import Swiper, { Navigation, Pagination } from 'swiper';
-const swiper = new Swiper();
-*/
-
 import {
   glide
 } from './modules/glide-slider.js';
+
+import animateSite from "./modules/animate-site.js";
 
 import searchBlockStyle from './modules/search-block.js';
 import toggleBurger from "./modules/toggle-burger.js";
@@ -19,6 +16,8 @@ import rating from "./modules/rating.js";
 
 window.addEventListener('DOMContentLoaded', () => {
   "use strict";
+
+  animateSite();
 
   if (document.querySelector('.glide')) {
     glide.mount();

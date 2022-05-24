@@ -19,10 +19,14 @@
 	],
 	"dependencies": {
 		"@glidejs/glide": "^3.5.2",
-		"gulp-cli": "^2.3.0"
+		"animate.css": "^4.1.1",
+		"gulp-cli": "^2.3.0",
+		"wow.js": "^1.2.2"
 	},
 	"devDependencies": {
+		"@babel/preset-env": "^7.18.0",
 		"autoprefixer": "^10.4.7",
+		"babel-loader": "^8.2.5",
 		"browser-sync": "latest",
 		"css-loader": "^6.7.1",
 		"del": "latest",
