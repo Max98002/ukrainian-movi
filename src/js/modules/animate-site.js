@@ -12,7 +12,7 @@ const animateSite = () => {
       const nodes = document.querySelectorAll(elements);
 
       nodes.forEach(el => {
-        el.classList.add(wow, `${prefix}animated`, animationName, `${delay}0.5s`);
+        el.classList.add(wow, `${prefix}animated`, animationName, `${delay}0.2s`, 'animate__fast');
       });
 
       function handleAnimationEnd(event) {
@@ -32,7 +32,7 @@ const animateSite = () => {
 
   };
 
-  animateCSS('.movie-card', 'bounce');
+  animateCSS('.movie-card', 'fadeInUp');
 
 };
 
