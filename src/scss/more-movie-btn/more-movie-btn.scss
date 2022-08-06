@@ -1,63 +1,65 @@
 .more-movie-btn {
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: center;
-  align-items: center;
-  background: linear-gradient(0deg, #0C1016, #0C1016);
-  border-radius: 12px;
-  max-height: 273px;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	align-items: center;
+	background: linear-gradient(0deg, #0c1016, #0c1016);
+	border-radius: 12px;
+	align-self: stretch;
+	max-height: 82%;
+	// min-height: 273px;
 
-  &__click {
-    display: grid;
-    place-items: center;
-    width: 64px;
-    height: 64px;
-    margin-bottom: 16px;
-    border: 1px solid #368CFC;
-    backdrop-filter: blur(64px);
-    border-radius: 100%;
+	&__click {
+		display: grid;
+		place-items: center;
+		width: 64px;
+		height: 64px;
+		margin-bottom: 16px;
+		border: 1px solid #368cfc;
+		backdrop-filter: blur(64px);
+		border-radius: 100%;
 
-    img {
-      width: 12px;
-      height: 12px;
-    }
-  }
+		img {
+			width: 12px;
+			height: 12px;
+		}
+	}
 
-  &__text {
-    font-size: 1.6rem;
-    line-height: 19px;
-    color: #FFFFFF;
-  }
+	&__text {
+		font-size: 1.6rem;
+		line-height: 19px;
+		color: #ffffff;
+	}
 
-  &:hover {
-    background: linear-gradient(0deg, #384656, #384656);
-  }
+	&:hover {
+		background: linear-gradient(0deg, #384656, #384656);
+	}
 }
 
 @media (max-width: 575.98px) {
-  .more-movie-btn {
-    max-height: 237px;
+	.more-movie-btn {
+		// max-height: 237px;
 
-    &__click {
-      width: 48px;
-      height: 48px;
+		&__click {
+			width: 48px;
+			height: 48px;
 
-      img {
-        width: 10px;
-        height: 10px;
-      }
-    }
+			img {
+				width: 10px;
+				height: 10px;
+			}
+		}
 
-    &__text {
-      font-size: 1.4rem;
-      line-height: 17px;
-      color: #FFFFFF;
-    }
-  }
+		&__text {
+			font-size: 1.4rem;
+			line-height: 17px;
+			color: #ffffff;
+		}
+	}
 }
 
 @media (max-width: 375px) {
-  .more-movie-btn {
-    max-height: 200px;
-  }
+	.more-movie-btn {
+		// max-height: 200px;
+	}
 }

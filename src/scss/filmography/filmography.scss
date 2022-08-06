@@ -1,66 +1,46 @@
 .filmography {
-  margin-bottom: 300px;
-  &-info {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    margin-bottom: 48px;
+	margin-bottom: calc(194px + (247 - 194) * ((100vw - 320px) / (1160 - 375)));
+	&-info {
+		display: flex;
+		align-items: center;
+		justify-content: flex-start;
+		margin-bottom: 48px;
 
-    &__text {
-      font-weight: 500;
-      font-size: 2.8rem;
-      line-height: 33px;
-      color: #FFFFFF;
-      margin: 0;
-      margin-right: 12px;
-    }
+		&__text {
+			font-weight: 500;
+			font-size: 2.8rem;
+			line-height: 33px;
+			color: #ffffff;
+			margin: 0;
+			margin-right: 12px;
+		}
 
-    &__count {
-      padding: 4px 12px;
-      background: #07152B;
-      border-radius: 4px;
-      font-size: 1.4rem;
-      line-height: 17px;
-      color: #368CFC;
-    }
-  }
-  &-cards {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-auto-rows: 332px;
-    column-gap: 16px;
-    row-gap: 64px;
-  }
-}
-
-@media (max-width: 991.98px) {
-  .filmography {
-    &-cards {
-      grid-template-columns: repeat(4, 1fr);
-      column-gap: 10px;
-      row-gap: 30px;
-    }
-  }
-}
-
-@media (max-width: 991.98px) {
-  .filmography {
-    &-cards {
-      grid-template-columns: repeat(3, 1fr);
-    }
-  }
+		&__count {
+			padding: 4px 12px;
+			background: #07152b;
+			border-radius: 4px;
+			font-size: 1.4rem;
+			line-height: 17px;
+			color: #368cfc;
+		}
+	}
+	&-cards {
+		display: grid;
+		grid-template-columns: repeat(2, minmax(100px, 180px));
+		column-gap: 16px;
+		row-gap: calc(32px + (64 - 32) * ((100vw - 320px) / (1160 - 375)));
+		align-items: flex-start;
+		@media (min-width: 425px) {
+			grid-template-columns: repeat(auto-fit, minmax(156px, 1fr));
+			justify-content: center;
+		}
+	}
 }
 
 @media (max-width: 575.98px) {
-  .filmography {
-    margin-bottom: 60px;
-    &-info {
-      margin-bottom: 24px;
-    }
-    &-cards {
-      grid-template-columns: repeat(2, 1fr);
-      column-gap: 10px;
-      row-gap: 30px;
-    }
-  }
+	.filmography {
+		&-info {
+			margin-bottom: 24px;
+		}
+	}
 }

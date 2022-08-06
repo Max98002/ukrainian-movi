@@ -32,7 +32,7 @@ const animateSite = () => {
 
   };
 
-  animateCSS('.movie-card', 'fadeInUp');
+  // animateCSS('.movie-card', 'fadeInUp');
 
 };
 

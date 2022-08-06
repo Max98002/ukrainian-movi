@@ -11,7 +11,7 @@ const glide = new Glide(".glide", {
   gap: 20,
   // autoplay: 3000,
   hoverpause: true,
-  animationDuration: 1000,
+  animationDuration: 200,
   // peek: {
   //   before: 0,
   //   after: 95

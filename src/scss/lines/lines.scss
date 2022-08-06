@@ -1,31 +1,39 @@
 .lines-block {
-  position: absolute;
-  display: flex;
-  flex-flow: row nowrap;
-  align-items: stretch;
-  justify-content: flex-start;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  pointer-events: none;
+	position: absolute;
+	display: flex;
+	flex-flow: row nowrap;
+	align-items: stretch;
+	justify-content: flex-start;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	pointer-events: none;
+	&::before {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background-color: rgba(#000, 0.6);
+	}
+	&__line {
+		width: 1px;
+		height: 100%;
+		background-color: rgba(#ffffff, 0.3);
 
-  &__line {
-    width: 1px;
-    height: 100%;
-    background-color: rgba(#ffffff, 0.1);
+		&:not(:last-child) {
+			margin-right: 7px;
+		}
+	}
 
-    &:not(:last-child) {
-      margin-right: 7px;
-    }
-  }
+	&_novelty {
+		transform: matrix(0.68, -0.82, 0.65, 0.69, -350, -164);
+		height: 949.87px;
+	}
 
-  &_novelty {
-    transform: matrix(0.68, -0.82, 0.65, 0.69, -350, -164);
-    height: 949.87px;
-  }
-
-  &_watch-movie {
-    transform: matrix(0.68, -0.82, 0.65, 0.69, -62, -418);
-    height: 1439px;
-  }
+	&_watch-movie {
+		transform: matrix(0.68, -0.82, 0.65, 0.69, -62, -418);
+		height: 1439px;
+	}
 }

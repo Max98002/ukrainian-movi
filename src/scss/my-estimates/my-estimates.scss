@@ -1,122 +1,104 @@
 .my-estimates {
-  margin-bottom: 200px;
+	margin-bottom: 200px;
 
-  &-header {
-    border-bottom: 1px solid #1E2630;
-    margin-bottom: 32px;
+	&-header {
+		border-bottom: 1px solid #1e2630;
+		margin-bottom: 32px;
 
-    &-block {
-      padding: 0;
-      margin: 0;
-      list-style: none;
-      display: flex;
-      align-items: center;
-      justify-content: flex-start;
+		&-block {
+			padding: 0;
+			margin: 0;
+			list-style: none;
+			display: flex;
+			align-items: center;
+			justify-content: flex-start;
 
-      &__item {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: relative;
+			&__item {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				position: relative;
 
-        &:not(:last-child) {
-          margin-right: 24px;
-        }
+				&:not(:last-child) {
+					margin-right: 24px;
+				}
 
-        &::before {
-          content: '';
-          position: absolute;
-          bottom: 0;
-          width: 100%;
-          height: 3px;
-          background: #FFFFFF;
-          border-radius: 4px 4px 0px 0px;
-        }
-      }
+				&::before {
+					content: "";
+					position: absolute;
+					bottom: 0;
+					width: 100%;
+					height: 3px;
+					background: #ffffff;
+					border-radius: 4px 4px 0px 0px;
+				}
+			}
 
-      &__text {
-        padding: 0 16px;
-        padding-bottom: 16px;
-        font-weight: 400;
-        font-size: 1.6rem;
-        line-height: 19px;
-        cursor: pointer;
-      }
-    }
-  }
+			&__text {
+				padding: 0 16px;
+				padding-bottom: 16px;
+				font-weight: 400;
+				font-size: 1.6rem;
+				line-height: 19px;
+				cursor: pointer;
+			}
+		}
+	}
 
-  &-cards {
-    display: grid;
-    grid-template-columns: repeat(4, 180px);
-    grid-auto-rows: auto;
-    column-gap: 16px;
-    justify-content: flex-start;
-  }
+	&-cards {
+		display: grid;
+		grid-template-columns: repeat(2, minmax(100px, 180px));
+		column-gap: 16px;
+		row-gap: calc(32px + (64 - 32) * ((100vw - 320px) / (1160 - 375)));
+		margin-bottom: 92px;
+		align-items: flex-start;
+		@media (min-width: 425px) {
+			grid-template-columns: repeat(auto-fit, minmax(156px, 1fr));
+			justify-content: center;
+		}
+	}
 
-  &-no-ratings {
-    display: flex;
-    justify-content: center;
-    margin-top: 89px;
-    margin-bottom: 300px;
-    &__img {
-      width: 256px;
-      height: 256px;
-      background: #0C1016;
-      border-radius: 100%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      img {
-        width: 90px;
-        height: 90px;
-        transform: rotate(15.7deg);
-      }
-    }
-  }
-}
-
-@media (max-width: 991.98px) {
-  .my-estimates {
-    &-cards {
-      grid-template-columns: repeat(3, 180px);
-      row-gap: 40px;
-    }
-  }
+	&-no-ratings {
+		display: flex;
+		justify-content: center;
+		margin-top: 89px;
+		margin-bottom: 300px;
+		&__img {
+			width: 256px;
+			height: 256px;
+			background: #0c1016;
+			border-radius: 100%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			img {
+				width: 90px;
+				height: 90px;
+				transform: rotate(15.7deg);
+			}
+		}
+	}
 }
 
 @media (max-width: 575.98px) {
-  .my-estimates {
-    margin-bottom: 100px;
+	.my-estimates {
+		margin-bottom: 100px;
 
-    &-header {
-      margin-bottom: 24px;
-    }
+		&-header {
+			margin-bottom: 24px;
+		}
 
-    &-cards {
-      grid-template-columns: repeat(2, 156px);
-    }
-
-    &-no-ratings {
-      margin-top: 96px;
-      margin-bottom: 250px;
-      &__img {
-        width: 156px;
-        height: 156px;
-        img {
-          width: 55px;
-          height: 55px;
-        }
-      }
-    }
-  }
-}
-
-@media (max-width: 375px) {
-  .my-estimates {
-    &-cards {
-      grid-template-columns: 156px;
-      grid-auto-rows: 265px;
-      column-gap: 10px;
-    }
-  }
+		&-no-ratings {
+			margin-top: 96px;
+			margin-bottom: 250px;
+			&__img {
+				width: 156px;
+				height: 156px;
+				img {
+					width: 55px;
+					height: 55px;
+				}
+			}
+		}
+	}
 }
